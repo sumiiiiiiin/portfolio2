@@ -1,0 +1,488 @@
+@charset "utf-8";
+
+:root {
+  --font-size-14: 0.875rem;
+  --font-size-17: 1.063rem;
+  --font-size-18: 1.125rem;
+  --font-size-20: 1.25rem;
+  --font-size-26: 1.625rem;
+  --font-size-30: 1.875rem;
+  --main-color: #1f2353;
+}
+
+/**** 스크롤바 ****/
+::-webkit-scrollbar {
+  width: 13px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #77c9ff;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #dceef0;
+}
+
+/**** 드래그 ****/
+::selection {
+  background-color: #77c9ff;
+  color: #fff;
+}
+
+/***** contents *****/
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: var(--main-color);
+}
+.layout-wrapper {
+  width: 94%;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+body > div {
+  position: relative;
+  z-index: 1;
+}
+
+/***** header-menu *****/
+header {
+  width: 100%;
+  height: 8vh;
+  padding-top: 2vw;
+
+  background-color: rgba(255, 255, 255, 1);
+  backdrop-filter: blur(5px);
+  box-shadow: 20px 20px 40px rgba(31, 35, 83, 0.3);
+
+  position: sticky;
+  top: 0;
+  z-index: 50;
+
+  transition: 0.4s;
+}
+header .header_nav {
+  line-height: 8vh;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header_nav:hover {
+  cursor: pointer;
+}
+header .header_nav h1 {
+  background: url(./images/logo_posoco_blue.png) no-repeat 50% / contain;
+  width: 140px;
+  height: 30px;
+  text-indent: -9999px;
+}
+header .header_nav .menu_nav {
+  display: none;
+}
+header .header_nav .menu_nav li {
+  margin: 0 1vw;
+}
+header .header_nav .menu_nav li:hover {
+  font-weight: bold;
+  transition: 0.3s;
+  transform: translateY(-5px);
+}
+header .header_nav .header_utill {
+  justify-content: space-evenly;
+  align-items: center;
+
+  display: none;
+}
+header .header_nav .header_utill li {
+  margin: 0 0.7vw;
+}
+header .header_nav .header_utill li:hover {
+  font-weight: bold;
+}
+header .header_nav .header_utill img {
+  filter: opacity(0.5) drop-shadow(0 0 #1f2353);
+
+  width: 20px;
+  height: 20px;
+  line-height: 10vh;
+
+  display: flex;
+  justify-content: center;
+}
+header .header_nav .header_utill img:hover {
+  filter: opacity(0.5) drop-shadow(0 0 0 #000);
+}
+
+/***** 햄버거 메뉴*****/
+.hamburger_btn {
+  margin: 1.5vh 2vw;
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.25rem;
+  user-select: none;
+}
+.checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 1.3em;
+  width: 1.3em;
+}
+.checkmark span {
+  width: 32px;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.checkmark span.active {
+  background-color: #000;
+}
+.checkmark span:nth-child(1) {
+  top: 10%;
+}
+.checkmark span:nth-child(2) {
+  top: 50%;
+}
+.checkmark span:nth-child(3) {
+  top: 90%;
+}
+.container input:checked + .checkmark span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+}
+.container input:checked + .checkmark span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+}
+.container input:checked + .checkmark span:nth-child(3) {
+  transform: translateX(-50px);
+  transform: translateX(-50px);
+  transform: translateX(-50px);
+  transform: translateX(-50px);
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+/* 햄버거 메뉴 */
+.menu {
+  padding: 1vw 0;
+  display: none;
+  width: 100%;
+  background-color: #fff;
+}
+.menu li {
+  padding: 2vw 0;
+  margin-bottom: 2vw;
+  text-align: center;
+}
+.menu li:hover {
+  background-color: var(--main-color);
+}
+.menu li:hover a {
+  color: #fff;
+}
+.menu li a {
+  color: #000;
+  font-size: 3vw;
+}
+
+/***** main *****/
+.main1 {
+  background-color: #fff;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  text-align: center;
+}
+/** video **/
+.main1 .main1-video iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  aspect-ratio: 16/9;
+  height: 60vh;
+}
+.main1 .main1-txt h1 {
+  font-weight: 700;
+  font-size: var(--font-size-30);
+  margin: 50px 0 20px 0;
+  padding-top: 30px;
+}
+.main1 .main1-txt h2 {
+  font-size: var(--font-size-26);
+}
+.main1 .main1-txt p {
+  font-size: var(--font-size-14);
+  margin: 35px 0;
+}
+
+/***** 탄소 section1 *****/
+.hyrex {
+  margin: 0 auto;
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 40px 0;
+}
+.hyrex .hyrex-main h1 {
+  font-size: var(--font-size-30);
+  font-weight: 700;
+}
+.hyrex .hyrex-main p {
+  margin: 25px 0;
+}
+.hyrex .hyrex-main .hyrex-btn {
+  background-color: #fff;
+  color: var(--main-color);
+  border: 1px solid#fff;
+  border-radius: 10px;
+  width: 180px;
+  padding: 5px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.hyrex .layout-wrapper .hyrex-btn:hover {
+  width: 200px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.hyrex ul {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  background-color: #efeffd;
+  color: #000;
+  border: 1px solid #efeffd;
+  border-radius: 12px;
+}
+.hyrex .hyrex-txt ul li {
+  width: 85%;
+  margin: 40px auto;
+}
+.hyrex .hyrex-txt ul li:first-child {
+  font-size: var(--font-size-26);
+  font-weight: 700;
+  border-bottom: 3px #000 solid;
+  padding-bottom: 15px;
+}
+.hyrex .hyrex-txt ul li:nth-child(2) {
+  font-weight: 700;
+  font-size: var(--font-size-20);
+}
+
+/***** 녹색지구 section2 *****/
+.greenate {
+  background-color: #fff;
+}
+.greenate .greenate-txt {
+  padding-bottom: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.greenate h1 {
+  font-weight: 700;
+  font-size: var(--font-size-30);
+  margin-bottom: 30px;
+  padding-top: 70px;
+}
+.greenate .greenate-small {
+  font-size: var(--font-size-20);
+}
+.greenate .img-txt li {
+  width: 87%;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+.greenate .txt-box {
+  padding: 20px 0;
+}
+.greenate .txt-box h3 {
+  font-size: var(--font-size-17);
+  font-weight: 700;
+}
+.greenate .txt-box .desc {
+  font-size: var(--font-size-14);
+  margin-top: 5px;
+}
+.greenate .txt-box .plus {
+  display: none;
+}
+
+/***** 탄소중립 section3 *****/
+.posco-asia {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.posco-asia h1 {
+  font-weight: 700;
+  font-size: var(--font-size-26);
+  padding-top: 60px;
+}
+.posco-asia h3 {
+  font-size: var(--font-size-18);
+  font-weight: 700;
+  margin: 20px 0 60px 0;
+}
+.posco-asia .posco-asia-sub {
+  margin-bottom: 40px;
+}
+.posco-asia .posco-asia-sub h2 {
+  font-size: var(--font-size-20);
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.posco-asia .posco-asia-sub p {
+  font-size: var(--font-size-16);
+}
+.posco-asia .posco-asia-sub p:last-child {
+  margin: 15px 0 20px 0;
+}
+
+/***** 탄소중립 section3 로고 *****/
+.posco-asia-img-box .left {
+  width: 50%;
+  background: url(./images/img_business1.jpg) no-repeat 50% / contain;
+  background-size: 72%;
+  text-indent: -9999px;
+  border: 1px solid #929090;
+}
+.posco-asia-img-box {
+  display: flex;
+  padding-bottom: 40px;
+}
+.posco-asia-img-box .right {
+  width: 50%;
+}
+.posco-asia-img-box .right li {
+  border: 1px solid #929090;
+  padding: 15px;
+  margin: 0 0 10px 10px;
+}
+.posco-asia-img-box .right li:nth-child(1) {
+  background: url(./images/img_business2.jpg) no-repeat 50% / contain;
+  background-size: 70%;
+  text-indent: -9999px;
+  height: 30%;
+}
+.posco-asia-img-box .right li:nth-child(2) {
+  background: url(./images/img_business3.jpg) no-repeat 50% / contain;
+  background-size: 70%;
+  text-indent: -9999px;
+  height: 30%;
+}
+.posco-asia-img-box .right li:nth-child(3) {
+  background: url(./images/img_business4.jpg) no-repeat 50% / contain;
+  background-size: 70%;
+  text-indent: -9999px;
+  height: 30%;
+}
+
+/***** 철강사 section4 *****/
+.global {
+  text-align: center;
+  background-color: #efeffd;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.global h1 {
+  font-size: var(--font-size-30);
+  font-weight: 700;
+  margin: 50px 0;
+}
+.global .global-txt {
+  margin: 0 auto;
+}
+.global .global-txt ul {
+  margin-bottom: 150px;
+}
+.global .global-txt ul li {
+  margin: 0 auto;
+}
+.global .global-txt ul li:nth-child(1) {
+  border: 1px solid var(--main-color);
+  border-radius: 40px;
+  font-size: var(--font-size-26);
+  text-transform: capitalize;
+  background-color: var(--main-color);
+  color: #fff;
+  width: 200px;
+  padding: 15px 0;
+  margin: 10px auto;
+}
+.global .global-txt li:nth-child(2) {
+  font-weight: 700;
+  font-size: var(--font-size-18);
+}
+.global .global-txt li:nth-child(3) {
+  margin-bottom: 40px;
+}
+.global p {
+  background-color: #77c9ff;
+  color: #fff;
+  border: 1px solid #77c9ff;
+  border-radius: 10px;
+  width: 170px;
+  padding: 5px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+/***** footer *****/
+.footer {
+  width: 100%;
+  font-size: var(--font-size-14);
+  padding: 40px 0;
+  background-color: var(--main-color);
+  color: #fff;
+
+  position: sticky;
+  bottom: 0;
+  z-index: 0;
+}
+.footer .footer-nav li {
+  margin: 5px;
+  float: left;
+}
+.footer .footer-info {
+  clear: both;
+  padding: 50px 0;
+}
+.footer .footer-info li {
+  line-height: 25px;
+}
+.footer .footer-btn a {
+  display: block;
+  background-color: #fff;
+  color: var(--main-color);
+  border: 1px solid #fff;
+  border-radius: 10px;
+  width: 180px;
+  text-align: center;
+  padding: 10px 15px;
+
+  position: relative;
+}

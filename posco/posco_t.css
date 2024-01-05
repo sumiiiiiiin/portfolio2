@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+/******** tablet ********/
+
+/***** header *****/
+header {
+  padding-top: 1vw;
+}
+/*** 햄버거 메뉴 ***/
+.menu {
+  width: 100%;
+  background-color: #fff;
+  padding: 1vw 0;
+}
+.menu li {
+  padding: 1vw 0;
+  margin-bottom: 1vw;
+  text-align: center;
+}
+.menu li:hover {
+  background-color: var(--main-color);
+}
+.menu li:hover a {
+  color: #fff;
+}
+.menu li a {
+  color: #000;
+  font-size: 1.3vw;
+}
+
+/***** main *****/
+.main .main1-txt h1 {
+  margin-bottom: 0;
+}
+
+/***** 탄소 section1 *****/
+.hyrex .hyrex-main {
+  padding-top: 30px;
+}
+.hyrex .hyrex-txt {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hyrex .hyrex-txt ul {
+  width: 30%;
+}
+
+/*****녹색지구 section2*****/
+.greenate .img-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.greenate .img-txt li {
+  width: 90%;
+  margin: 10px;
+}
+.greenate .img-txt .desc {
+  margin-top: 10px;
+}
+
+/*****탄소중립 section3*****/
+.posco-asia .txt-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.posco-asia .txt-logo .posco-asia-sub {
+  width: 50%;
+  margin-right: 25px;
+}
+.posco-asia .txt-logo .posco-asia-img-box {
+  width: 50%;
+}
+
+/*****철강사 section4*****/
+.global {
+  margin: 0 auto;
+}
+.global .global-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.global .global-txt ul {
+  width: 35%;
+  margin-bottom: 100px;
+}

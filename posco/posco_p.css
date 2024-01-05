@@ -1,0 +1,235 @@
+@charset "utf-8";
+
+/******** pc ********/
+
+/***** header *****/
+header {
+  padding-top: 0;
+}
+
+header .header_nav .menu_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header_nav .menu_nav li:hover {
+  font-weight: bold;
+  transition: 0.5s;
+  transform: translateY(-5px);
+}
+header .header_nav .header_utill {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header .header_nav .header_utill img {
+  display: flex;
+}
+
+/*** 햄버거 버튼 ***/
+.hamburger_btn {
+  display: none;
+}
+.menu {
+  display: none;
+}
+
+/***** main *****/
+.main1 {
+  padding: 0;
+}
+.main1 .main1-video iframe {
+  height: 100%;
+}
+.main1 .main1-video {
+  position: relative;
+}
+.main1 .main1-txt {
+  color: #fff;
+  text-align: left;
+  position: absolute;
+  top: 30%;
+  bottom: 50%;
+  left: 8%;
+}
+.main1 .main1-txt h1 {
+  font-size: 2.2rem;
+}
+.main1 .main1-txt h2 {
+  font-size: 1.8rem;
+}
+.main1 .main1-txt p {
+  font-size: 2.2rem;
+}
+.main1 .main1-txt p {
+  font-size: var(--font-size-18);
+}
+
+/***** 탄소 section1 *****/
+.hyrex .hyrex-txt {
+  margin: 0 auto;
+  width: 75%;
+}
+.hyrex .hyrex-txt ul {
+  width: 30%;
+  height: 380px;
+}
+
+/*****녹색지구 section2*****/
+.greenate .txt-box {
+  display: block;
+}
+.img-txt img {
+  width: 100%;
+}
+.img-txt {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.img-txt li {
+  flex-basis: 400px;
+  margin: 1vw;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+}
+.img-txt li img {
+  width: 100%;
+  vertical-align: top;
+}
+.img-txt li .txt-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 1vw;
+  aspect-ratio: 1/1;
+  transition: 0.4s;
+}
+.img-txt li .txt-box h3 {
+  font-size: var(--font-size-18);
+  font-weight: bold;
+  margin: 35px 0;
+}
+.img-txt li .txt-box .desc {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1rem;
+  margin-top: 70px;
+}
+.img-txt li .txt-box .plus {
+  display: block;
+  text-align: left;
+  width: 80%;
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+}
+.img-txt li .txt-box .plus::after {
+  content: '';
+  border: 1px solid #fff;
+  display: block;
+  width: 48px;
+  margin-top: 7px;
+}
+.img-txt li .txt-box .plus:hover {
+  cursor: pointer;
+}
+.img-txt li:hover .txt-box {
+  transform: translateY(-100%);
+}
+
+/*****탄소중립 section3*****/
+.posco-asia .txt-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.posco-asia .txt-logo .posco-asia-sub {
+  width: 40%;
+  margin-right: 25px;
+}
+.posco-asia-img-box .left {
+  background-size: 80%;
+}
+.posco-asia-img-box .left:hover {
+  cursor: pointer;
+  transform: translatey(-10px);
+  transition: 0.8s;
+  /* box-shadow: 5px 5px 10px #77c9ff; */
+}
+.posco-asia-img-box .right li {
+  cursor: pointer;
+  background-size: 20%;
+  padding: 40px;
+  margin: 18px;
+}
+.posco-asia-img-box .right li:first-child {
+  margin-top: 0;
+}
+.posco-asia-img-box .right li:last-child {
+  margin-bottom: 0;
+}
+.posco-asia-img-box .right li:hover {
+  transform: translateX(10px);
+  transition: 0.8s;
+  /* box-shadow: 3px 4px 10px#77c9ff; */
+}
+
+/*****철강사 section4*****/
+.global {
+  width: 100%;
+}
+.global h1 {
+  width: 90%;
+  text-align: right;
+  position: relative;
+}
+.global .global-txt {
+  width: 70%;
+  margin-left: 0;
+  align-items: center;
+}
+.global .global-txt ul {
+  width: 40%;
+  margin-bottom: 80px;
+}
+.global .global-txt ul li:nth-child(1) {
+  margin-bottom: 20px;
+}
+.global .global-txt ul li:nth-child(1):hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.8s;
+}
+.global p {
+  position: absolute;
+  bottom: 25%;
+  right: 10%;
+
+  cursor: pointer;
+}
+/* .global p:hover {
+  width: 180px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+} */
+
+/*****footer*****/
+.footer .footer-nav li:hover {
+  cursor: pointer;
+}
+.footer .footer-btn:hover {
+  background-color: #fff;
+  color: var(--main-color);
+  cursor: pointer;
+  transform: translateX(10px);
+  transition: 0.8s;
+}
+.footer .footer-btn {
+  position: absolute;
+  bottom: 35%;
+  right: 10%;
+}
+.footer .footer-txt .footer-nav {
+  margin: 0 auto;
+}
