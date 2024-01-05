@@ -50,6 +50,7 @@
 	- 정보전달
 	
 - Color
+
 ![index_color](./index/images/index_color.png)
 
 - Typography
