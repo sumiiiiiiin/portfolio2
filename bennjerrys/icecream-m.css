@@ -1,0 +1,654 @@
+@charset "utf-8";
+
+/*** 공통 css 파일 연결 ***/
+@import url(./common.css);
+
+
+/***** header *****/
+header{
+    width: 100%;
+    height: 8vh;
+    background-color: #fff;
+    border-bottom: 2px solid var(--main-color);
+
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+header nav{
+    width: 90%;
+    margin: 0 auto;
+
+    line-height: 8vh;
+
+    justify-content: space-between;
+    align-items: center;
+}
+header nav h2{
+    background: url(./images/main-logo.png) no-repeat 50% / contain ;
+    width: 16%;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+header nav .menu_icon svg{
+    margin-left: 1.5vw;
+    cursor: pointer;
+}
+
+header nav .menu_nav{
+    display: none;
+}
+
+/***** 햄버거버튼 *****/
+.hamburger_btn {
+    margin: 1.5vh 2vw;
+  }
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 1.25rem;
+    user-select: none;
+  }
+  .checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    /* height: 1.3em;
+    width: 1.3em; */
+    height: 1em;
+    width: 1.3em;
+  }
+  .checkmark span {
+    width: 25px;
+    height: 3px;
+    /* background-color: rgb(0, 0, 0); */
+    background-color: var(--main-color);
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .checkmark span.active {
+    background-color: #000;
+    background-color: var(--main-color);
+  }
+  .checkmark span:nth-child(1) {
+    /* top: 10%; */
+    top: 3%;
+  }
+  .checkmark span:nth-child(2) {
+    /* top: 50%; */
+    top: 45%;
+  }
+  .checkmark span:nth-child(3) {
+    /* top: 90%; */
+    top: 85%;
+  }
+  .container input:checked + .checkmark span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .container input:checked + .checkmark span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    transform: translateY(-50%) rotate(-45deg);
+    transform: translateY(-50%) rotate(-45deg);
+    transform: translateY(-50%) rotate(-45deg);
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  .container input:checked + .checkmark span:nth-child(3) {
+    /* transform: translateX(-50px);
+    transform: translateX(-50px);
+    transform: translateX(-50px);
+    transform: translateX(-50px);
+    transform: translateX(-50px); */
+    opacity: 0;
+  }
+/***** 햄버거메뉴 *****/
+header .hamburger_menu{   
+    height: 57vh;
+    border-radius: 0 0 40px 40px;
+    
+    display: none;
+    color: var(--main-color);
+    background-color: #fff;
+    
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    padding: 1rem;
+}
+header .hamburger_menu li{
+    margin: 1rem 0;
+}
+header .hamburger_menu li span:hover{
+    border-bottom: 2px dashed var(--main-color);
+}
+.search{
+    width: 280px;
+    height: 37px;
+    border: 1px solid var(--main-color);
+    margin: 2rem 0;
+}
+.search input{
+    width: 175px;
+    padding: 10px;
+    border: 0px;
+    outline: none;
+    float: left;
+}
+.search button{
+    width: 50px;
+    height: 100%;
+
+    color: #fff;
+    background-color: var(--main-color);
+    
+    border: 0px;
+    outline: none;
+    float: right;
+}
+
+
+/***** main *****/
+main{
+    background: url(./images/main-bg.png) no-repeat 50% / cover;
+    font-family: var(--main-font-en);
+    color: #fff;
+
+    width: 100%;
+    height: 57vh;
+    /* height: calc(100vh - 7vh); */
+
+    position: relative;
+}
+main .main-txt{
+    width: 70%;
+    text-align: right;
+
+    position: absolute;
+    top: 11%;
+    right: 7%;
+}
+main .main-txt img{
+    width: 6rem;
+}
+main .main-txt h2{
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+main .main-txt h3{
+    font-size: 2.9rem;
+
+    text-shadow: -1px -1px var(--main-color), -4px -4px var(--main-color), -5px -5px var(--main-color),-6px -6px var(--main-color) ;
+
+    margin-bottom: 1rem;
+}
+main .more_btn{
+    font-family: 'Noto Sans KR', sans-serif;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    font-weight: 800;
+
+    background-color: #fff;
+    color: var(--main-color);
+
+    width: 8.5rem;
+    height: 2.2rem;
+    line-height: 2.2rem;
+      
+    text-align: center;
+   
+    border-radius: 2rem;
+
+    position: absolute;
+    right: 0%;
+}
+main .main_img{
+    width: 65vw;
+    /* width: 18rem; */
+
+    position: absolute;
+    bottom: 2%;
+    left: 1%;
+
+    animation: mov 1.2s infinite linear alternate-reverse;
+}
+@keyframes mov {
+    0% {
+        transform: translateY(-7px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+
+/***** 메인 아래 이미지+텍스트 슬라이드 텍스트 *****/
+.viewbox{
+    background-color: #fff;
+    width: 100%;
+    height: 6.5vh;
+    border-top: 3px solid var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+    overflow: hidden;
+}
+.viewbox .slidebox{
+    width: 200%;
+    height: 100%;
+ 
+    animation: flowtxt 15s linear infinite;
+}
+@keyframes flowtxt{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.viewbox .slidebox .slide-item{
+    font-family: var(--main-font-en);
+
+    margin-right: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.viewbox .slidebox .slide-item img{
+    width: 2rem;
+    margin: 0 3vw;
+}
+.viewbox .slidebox .slide-item{
+    font-size: 2rem;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+
+/***** menu *****/
+.menu{
+  height: 100%;
+}
+.menu .menu_list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 1.5rem;
+
+    text-align: center;
+
+    margin-top: 3.5rem;
+    padding: 0 3rem;
+}
+.menu .menu_list li{
+    width: 11rem;
+    height: 16rem;
+    border-radius: 1.3rem;
+
+    /* box-shadow: 5px 5px 10px var(--main-color) ; */
+    box-shadow: 7px 7px 15px var(--main-color) ;
+
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+    position: relative;
+}
+.menu .menu_list li:hover{
+    /* border: solid 3px var(--main-color);
+    box-shadow: 4px 4px var(--main-color); */
+
+    border: solid 3px var(--main-color);
+    box-shadow: 5px 5px 0 var(--main-color);
+}
+.menu .menu_list h3{
+    font-size: 1.1rem;
+    font-weight: 900;
+
+    margin: 1.1rem 0 0.2rem 0;
+}
+.menu .menu_list p{
+    color: var(--main-color);
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    text-transform: capitalize;
+}
+.menu .menu_list img{
+    width: 6.5rem;
+
+    margin-top: 1rem;
+    transition: 0.5s;
+}
+/* 메뉴 리스트 이미지 hover시 이미지 변경 */
+.menu .menu_list .img1:hover img {
+    content: url('./images/ice-cream1-1.png'); 
+}
+.menu .menu_list .img2:hover img {
+    content: url('./images/ice-cream2-1.png'); 
+}
+.menu .menu_list .img3:hover img {
+    content: url('./images/ice-cream3-1.png'); 
+}
+.menu .menu_list .img4:hover img {
+    content: url('./images/ice-cream4-1.png'); 
+}
+.menu .menu_list .img5:hover img {
+    content: url('./images/ice-cream5-1.png'); 
+}
+.menu .menu_list .img6:hover img {
+    content: url('./images/ice-cream6-1.png'); 
+}
+.menu .btn{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+
+    color: var(--main-color);
+    
+    margin-top: 6rem;
+    cursor: pointer;
+
+    position: relative;
+}
+.menu .btn::before{
+    content: "";
+    border: 1px solid var(--main-color);
+    height: 22px;
+
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+
+    margin-bottom: 0.5rem;
+}
+
+
+/***** 메뉴 아래 슬라이드 텍스트 *****/
+.viewbox2{
+    width: 100%;
+
+    padding-top: 2rem;
+    overflow: hidden;
+}
+.viewbox2 .slidebox .item-box{
+    width: 700%;
+    height: 100%;
+
+    animation: flowtxt2 50s linear infinite ;
+}
+@keyframes flowtxt2{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.viewbox2 .slidebox .item-box .slide-item{
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #fff;
+
+    text-shadow: -1px 0px var(--main-color), 0px 1px var(--main-color), 1px 0px var(--main-color), 0px -1px var(--main-color);
+   
+    margin-right: 1rem;
+}
+.viewbox2 .slidebox .item-box:hover .slide-item{
+    color: var(--main-color);
+    transition: 0.4s;
+}
+
+
+/***** brand *****/
+.brand{
+    /* height: 50vh; */
+    height: 100%;
+}
+.brand .brand_box{
+    width: 100%;
+    height: 25.5vh;
+
+    background: url(./images/brand-bg.jpg) no-repeat 50% / cover;
+    /* filter: brightness(65%); 글씨도 같이 어두워져서 다른 방법으로 해결  */
+
+    margin: 0 auto;
+    margin-top: 3rem;
+
+    position: relative;
+}
+/* 백그라운드 이미지만 어둡게 */
+.brand .brand_box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+.brand .brand_box .brand_txt{
+    color: #fff;
+    padding: 0 1.8rem;
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.brand .brand_box .brand_txt h2{
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.brand .brand_box .brand_txt .center{
+    font-size: 0.78rem;
+
+    margin: 1rem 0;
+}
+.brand .brand_box .brand_txt .more_btn{
+    width: 8rem;
+    height: 2rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    text-align: center;
+    line-height: 2rem;
+    text-transform: capitalize;
+ 
+    background-color: #fff;
+    color: var(--main-color);
+
+    border-radius: 2rem;
+}
+
+
+/***** pop-up store *****/
+.store{
+    height: 100%;
+}
+.store h2{
+    width: 85%;
+    margin: 0 auto;
+
+    padding-top: 5rem; 
+}
+.store .store_list ul{
+
+    margin-top: 3.5rem;
+    gap: 3vw;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+.store .store_list ul li img{
+    width: 13rem;
+    height: 13rem;
+    /* object-fit: cover;*/  
+
+    border-radius: 10%;
+    transition: 0.3s;
+}
+.store .store_list .store_txt{
+    display: none;
+}
+.store .btn{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+
+    color: var(--main-color);
+    
+    margin-top: 6rem;
+
+    cursor: pointer;
+    position: relative;
+}
+.store .btn::before{
+    content: "";
+    border: 1px solid var(--main-color);
+    height: 22px;
+
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+
+    margin-bottom: 0.5rem;
+}
+
+
+/***** blog post *****/
+.blog{
+    height: 46vh;
+}
+.blog .blog_list li{
+    border-bottom: 2px solid #ddd;
+
+    margin: 1.3rem 0;
+    padding-bottom: 1.3rem;
+
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--main-color);
+
+    cursor: pointer;
+}
+.blog .blog_list li:first-child{
+    margin-top: 1.8rem;
+}
+
+
+/***** footer 위 이미지+텍스트 슬라이드 텍스트 *****/
+.viewbox3{
+    background-color: #fff;
+    width: 100%;
+    height: 6.5vh;
+    border-top: 7px solid var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+    overflow: hidden;
+}
+.viewbox3 .slidebox{
+    width: 200%;
+    height: 100%;
+ 
+    animation: flowtxt 15s linear infinite;
+}
+@keyframes flowtxt{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.viewbox3 .slidebox .slide-item{
+    font-family: var(--main-font-en);
+
+    margin-right: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.viewbox3 .slidebox .slide-item img{
+    width: 2rem;
+    margin: 0 1rem;
+}
+.viewbox3 .slidebox .slide-item{
+    font-size: 2rem;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+
+/***** footer *****/
+footer{
+    width: 100%;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 1rem;
+    padding: 40px 0 35px 0;
+}
+footer .footer_list{
+    margin: 0 auto;
+    width: 90%;
+    padding-left: 1.2rem;
+}
+footer .footer_list .footer_nav li{
+    margin-right: 25px;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+footer .footer_list .footer_nav li::after{
+    content: "";
+    border: 1px solid #fff;
+    margin-top: 5px;
+    display: block;
+}
+footer .footer_list .list_bottom{
+    margin-bottom: 3rem;
+}
+footer .footer_list .list_bottom li{
+    margin-right: 45px;
+    cursor: pointer;
+}
+footer .footer_list .list_bottom li h3{
+    margin-bottom: 0.7rem;
+}
+footer .footer_list .list_bottom li h3::after{
+    content: "";
+    border: 1px solid #fff;
+    margin-top: 5px;
+    display: block;
+}
+footer .footer_list .list_bottom li svg{
+    margin-right: 5px;
+ }
+footer .footer_list .list_bottom li p{
+    font-size: 0.8rem;
+}
+footer .footer_btn{
+    font-size: 0.9rem;
+    border: 1px solid #fff;
+    border-radius: 25px;
+
+    width: 180px;
+    height: 40px;
+    line-height: 35px;
+    text-align: center;
+}

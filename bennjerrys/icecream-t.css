@@ -1,0 +1,240 @@
+@charset "utf-8";
+
+/*** 공통 css 파일 연결 ***/
+@import url(./common.css);
+
+
+/***** header *****/
+header {
+    height: 7vh;
+}
+header nav{
+    width: 85%;
+    line-height: 7vh;
+}
+header .menu_icon{
+    display: none;
+}
+header nav .menu_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .menu_nav li{
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-left: 2rem;
+    color: var(--main-color);
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+header nav .menu_nav li:hover{
+    color: #000;
+    transform: translateY(-5px);
+}
+
+
+/***** main  *****/
+main{
+    width: 100%;
+    height: 82vh;
+}
+main .main_wrapper{
+    height: 60vh;
+}
+main .main-txt{
+    margin: 0 auto;
+    text-align: right;
+
+    position: absolute;
+    top: 15%;
+    right: 7%;
+}
+main .main-txt img{
+    width: 7rem;
+}
+main .main-txt h2{
+    font-size: 1.6rem;
+}
+main .main-txt h3{
+    font-size: 3.5rem;
+    text-shadow:  -4px -4px var(--main-color), -5px -5px var(--main-color),-6px -6px var(--main-color) ;
+}
+main .main_img{
+    width: 70vw;
+    /* width: 30rem; */
+    left: 2%;
+}
+
+
+/***** 메인 아래 이미지+텍스트 슬라이드 텍스트 *****/
+.viewbox .slidebox{
+    width: 200%;
+    height: 100%;
+ 
+    animation: flowtxt 25s linear infinite;
+}
+
+
+/***** menu *****/
+.menu .menu_list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.menu .menu_list li{
+    width: 11.9rem;
+    height: 16.5rem;
+}
+.menu .menu_list img{
+    width: 7rem;
+    margin-top: 1rem;
+
+    transition: 0.5s;
+}
+.menu .btn{
+    margin-top: 6rem;
+}
+
+
+/***** 메뉴 아래 슬라이드 텍스트 *****/
+.viewbox2 .slidebox .item-box{
+    animation: flowtxt2 80s linear infinite ;
+}
+@keyframes flowtxt2{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+/***** brand *****/
+.brand{
+    height: 100%;
+}
+.brand .brand_box{
+    width: 100%;
+    height: 43vh;
+
+    background-attachment: fixed;
+}
+.brand .brand_box .brand_txt{
+    width: 97%;
+}
+.brand .brand_box .brand_txt h2{
+    font-size: 1.5rem;
+}
+.brand .brand_box .brand_txt .center{
+    font-size: 1rem;
+
+    margin: 1rem 0;
+}
+.brand .brand_box .brand_txt .more_btn{
+    width: 9rem;
+    height: 2.2rem;
+    font-size: 1rem;
+
+    line-height: 2.2rem;
+}
+
+
+/***** pop-up store *****/
+.store{
+    height: 100%;
+    /* height: 85vh;*/
+}
+.store h2{
+    width: 85%;
+    margin: 0 auto;
+
+    padding-top: 5rem; 
+}
+.store .store_list ul{
+    height: 61vh;
+
+    gap: 3vw;
+}
+.store .store_list ul li img{
+    height: 45vw;
+
+    border-radius: 1.5rem;
+    filter: brightness(0.5);
+}
+.store .store_list .store_txt{
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    position: relative;  
+    bottom: -25vw;
+
+    transition: 0.3s;
+
+    z-index: 1;
+}
+.store .store_list .store_txt h3{
+    font-size: 1.4rem;
+    margin-bottom: 0.4rem;
+}
+.store .store_list .store_txt p{
+    font-weight: 300;
+}
+.store .store_list ul li:hover img {
+    filter: brightness(1);
+    transform: scale(1.1);
+}
+.store .store_list ul li:hover .store_txt {
+    opacity: 0;
+}
+.store .btn{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: var(--main-color);
+    
+    margin-top: 2rem;
+
+    cursor: pointer;
+    position: relative;
+}
+
+
+/***** blog post *****/
+.blog{
+    height: 50vh;
+}
+.blog .blog_list{
+    margin-top: 3rem;
+}
+.blog .blog_list li{
+    font-size: 1.2rem;
+    font-weight: 900;
+
+    margin: 1.5rem 0;
+    padding-bottom: 1.5rem;
+}
+.blog .blog_list li:hover p{
+    transform: translateX(8px);
+    transition: 0.3s;
+}
+.blog .blog_list li:hover svg {
+    transform: translateX(8px);
+    transition: 0.3s;
+}
+
+
+/***** footer 위 이미지+텍스트 슬라이드 텍스트 *****/
+.viewbox3{
+    margin-top: 2rem;
+    border-top: 9px solid var(--main-color);
+}
+.viewbox3 .slidebox{
+    animation: flowtxt 25s linear infinite;
+}
+
+/***** footer *****/

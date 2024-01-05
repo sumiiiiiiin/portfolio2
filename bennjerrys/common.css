@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+:root {
+    --main-font-en: 'PilseungGothic';
+    --sub-font-en: 'GangwonEduPowerExtraBoldA';
+    --main-color: #4050A3;
+}
+  
+/*** 스크롤바 ***/
+::-webkit-scrollbar {
+    width: 11px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #4050A3;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+
+/*** common ***/
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #fff;
+}
+
+/*** 각 section의 h1(타이틀)과 h1 아래 border ***/
+.title{
+    font-family: 'GangwonEduPowerExtraBoldA';
+    font-size: 1.6875rem;
+    border-bottom: 3px solid #4050A3;
+}
+
+/***** 공통 *****/
+.flex{
+    display: flex;
+}
+section:not(.active){
+    width: 85%;
+    margin: 0 auto;
+
+    padding-top: 5rem;
+}
+section .title{
+    padding-bottom: 1rem;
+}
+
+

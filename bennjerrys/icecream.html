@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BEN&JERRY'S</title>
+
+    <!-- reset -->
+    <link rel="stylesheet" href="../common/reset.css">
+
+    <!-- 파비콘 -->
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <!-- 오픈그래피 -->
+    <meta property="og:title" content="BEN&JERRY'S">
+    <meta property="og:description" content="BEN&JERRY'S 리디자인 반응형 사이트입니다">
+    <meta property="og:image" content="https://sumiiiiiiin.github.io/personal_work/benNjerrys/images/opengraph.png">
+    <meta property="og:url" content="https://sumiiiiiiin.github.io/personal_work/benNjerrys">
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="../common/fonts.css">
+    <!-- fonts noto sans kr -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- 내가 쓴 style -->
+    <!-- mobile 버전 -->
+    <link rel="stylesheet" href="./icecream-m.css">
+    <!-- tablet 버전 -->
+    <link rel="stylesheet" href="./icecream-t.css" media="(width >=768px)">
+    <!-- pc 버전-->
+    <link rel="stylesheet" href="./icecream-p.css" media="(width >=1200px)">
+
+
+    <!-- jQuery -->
+    <script src="../common/jquery-3.7.0.min.js"></script>
+
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- swiper js -->
+    <script src="../common/swiper-bundle.min.js"></script>
+
+    <!-- 내가 쓴 js -->
+    <script defer src="./icecream.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav class="flex">
+            <h2>로고</h2>
+
+            <menu class="menu_icon flex">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2.5 -2.5 24 24" width="32" fill="#4050A3">
+                    <path
+                        d="M8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12zm6.32-1.094l3.58 3.58a1 1 0 1 1-1.415 1.413l-3.58-3.58a8 8 0 1 1 1.414-1.414z">
+                    </path>
+                </svg>
+
+                <!-- 햄버거버튼 -->
+                <div class="hamburger_btn">
+                    <label class="container">
+                        <input type="checkbox" class="checkbox">
+                        <div class="checkmark">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </label>
+                </div>
+            </menu>
+
+
+            <menu class="menu_nav">
+                <li>flavours</li>
+                <li>shops</li>
+                <li>values</li>
+                <li>about us</li>
+            </menu>
+        </nav>
+
+        <!----- 햄버거메뉴 ----->
+        <div class="hamburger_menu">
+            <ul>
+                <li><a href="#"><span>아이스크림</span></a></li>
+                <li><a href="#"><span>회사소개</span></a></li>
+                <li><a href="#"><span>새로운 소식</span></a></li>
+                <li><a href="#"><span>매장위치 찾기</span></a></li>
+            </ul>
+
+            <div class="search">
+                <input type="text" placeholder="예: 체리가르시아">
+                <button>검색</button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- main -->
+    <main>
+        <section class="main_wrapper">
+            <div class="main-txt">
+                <img src="./images/character.png" alt="여,남 캐릭터가 손을 잡고 있고 사이에 아이스크림이 있는 사진">
+                <h2>DO THE world flavor</h2>
+                <h3>Peace, Love <br>& Ice Cream</h3>
+                <p class="more_btn">
+                    <a href="#">view more</a>
+                </p>
+            </div>
+
+            <img src="./images/main1.png" alt="가운데 파인트 크기의 아이스크림과 양쪽의 스푼이 꽂혀 있는 컵사이즈의 두가지맛 아이스크림 " class="main_img">
+        </section>
+    </main>
+
+
+    <!-- 메인 아래 이미지+텍스트 슬라이드 텍스트 -->
+    <div class="viewbox">
+        <div class="slidebox flex">
+            <div class="slide-item flex">
+                <img src="./images/slide-img.png" alt="아이스크림 그림 사진">ben&jerry's
+            </div>
+            <div class="slide-item flex">
+                <img src="./images/slide-img.png" alt="아이스크림 그림 사진">ben&jerry's
+            </div>
+            <div class="slide-item flex">
+                <img src="./images/slide-img.png" alt="아이스크림 그림 사진">ben&jerry's
+            </div>
+            <div class="slide-item flex">
+                <img src="./images/slide-img.png" alt="아이스크림 그림 사진">ben&jerry's
+            </div>
+            <div class="slide-item flex">
+                <img src="./images/slide-img.png" alt="아이스크림 그림 사진">ben&jerry's
+            </div>
+            <div class="slide-item flex">
+                <img src="./images/slide-img.png" alt="아이스크림 그림 사진">ben&jerry's
+            </div>
+            <div class="slide-item flex">
+                <img src="./images/slide-img.png" alt="아이스크림 그림 사진">ben&jerry's
+            </div>
+            <div class="slide-item flex">
+                <img src="./images/slide-img.png" alt="아이스크림 그림 사진">ben&jerry's
+            </div>
+            <div class="slide-item flex">
+                <img src="./images/slide-img.png" alt="아이스크림 그림 사진">ben&jerry's
+            </div>
+            <div class="slide-item flex">
+                <img src="./images/slide-img.png" alt="아이스크림 그림 사진">ben&jerry's
+            </div>
+        </div>
+    </div>
+
+
+    <!-- menu -->
+    <section class="menu">
+        <h2 class="title">MENU</h2>
+
+        <ul class="menu_list">
+            <li class="img1">
+                <img src="./images/ice-cream1.png" alt="체리가르시아 파인트 사이즈">
+                <h3>체리 가르시아</h3>
+                <p>cherry garcia</p>
+            </li>
+            <li class="img2">
+                <img src="./images/ice-cream2.png" alt="카라멜 수트라 파인트 사이즈">
+                <h3>카라멜 수트라</h3>
+                <p>karamel sutra</p>
+            </li>
+            <li class="img3">
+                <img src="./images/ice-cream3.png" alt="바닐라 파인트 사이">
+                <h3>바닐라</h3>
+                <p>vanilla</p>
+            </li>
+            <li class="img4">
+                <img src="./images/ice-cream4.png" alt="초콜릿 퍼지 브라우니 파인트 사이즈">
+                <h3>초콜릿 퍼지 브라우니</h3>
+                <p>chocolate <br>fudge brownie</br></p>
+            </li>
+            <li class="img5">
+                <img src="./images/ice-cream5.png" alt="뉴욕 수퍼 퍼지 청크 파인트 사이즈">
+                <h3>뉴욕 수퍼 퍼지 청크</h3>
+                <p>new york super <br>fudge chunk</br></p>
+            </li>
+            <li class="img6">
+                <img src="./images/ice-cream6.png" alt="민트 초콜릿 칩 쿠키 파인트 사이즈">
+                <h3>민트 초콜릿 칩 쿠키</h3>
+                <p>mint chocolate <br>cookie</br></p>
+            </li>
+        </ul>
+
+        <p class="btn">more</p>
+    </section>
+
+
+    <!-- 메뉴 아래 슬라이드 텍스트 -->
+    <div class="viewbox2">
+        <div class="slidebox">
+            <div class="item-box flex">
+                <p class="slide-item">Flavor Friends Forever ice cream.</p>
+                <p class="slide-item">Flavor Friends Forever ice cream.</p>
+                <p class="slide-item">Flavor Friends Forever ice cream.</p>
+                <p class="slide-item">Flavor Friends Forever ice cream.</p>
+                <p class="slide-item">Flavor Friends Forever ice cream.</p>
+                <p class="slide-item">Flavor Friends Forever ice cream.</p>
+            </div>
+            <div class="item-box flex">
+                <p class="slide-item">Flavor Friends Forever ice cream.</p>
+                <p class="slide-item">Flavor Friends Forever ice cream.</p>
+                <p class="slide-item">Flavor Friends Forever ice cream.</p>
+                <p class="slide-item">Flavor Friends Forever ice cream.</p>
+                <p class="slide-item">Flavor Friends Forever ice cream.</p>
+                <p class="slide-item">Flavor Friends Forever ice cream.</p>
+            </div>
+            <div class="item-box flex">
+                <p class="slide-item">Flavor Friends Forever ice cream.</p>
+                <p class="slide-item">Flavor Friends Forever ice cream.</p>
+                <p class="slide-item">Flavor Friends Forever ice cream.</p>
+                <p class="slide-item">Flavor Friends Forever ice cream.</p>
+                <p class="slide-item">Flavor Friends Forever ice cream.</p>
+                <p class="slide-item">Flavor Friends Forever ice cream.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- brand -->
+    <section class="brand">
+        <h2 class="title">BRAND</h2>
+
+        <div class="brand_box">
+            <div class="brand_txt">
+                <h2>Where in the World Are We?</h2>
+                <p class="center">1978년 버몬트주 벌링턴에 있는 주유소를 두 사람이 개조하여 작은 아이스크림 가게를 열면서 시작된 이 여정은 이제 벤과 제리의 행복감을 전 세계에 알리고
+                    있습니다.</p>
+                <p class="more_btn">
+                    <a href="#">view more</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- pop-up store -->
+    <section class="store active">
+        <h2 class="title">Pop-up STORE</h2>
+
+        <div class="store_list">
+            <ul class="flex">
+                <li>
+                    <div class="store_txt">
+                        <h3>대전 메종갤러리아</h3>
+                        <p>7월31일 ~ 9월13일</p>
+                    </div>
+
+                    <img src=" ./images/pop-up1.jpg" alt="팝업 스토어 대전 메종갤러리아점">
+                </li>
+
+                <li>
+                    <div class="store_txt">
+                        <h3>서울 성수점</h3>
+                        <p>4월3일 ~ 4월9일</p>
+                    </div>
+
+                    <img src="./images/pop-up2.jpg" alt="팝업 스토어 서울 성수점">
+                </li>
+
+                <li>
+                    <div class="store_txt">
+                        <h3>서울 연남점</h3>
+                        <p>9월19일 ~ 10월16일</p>
+                    </div>
+
+                    <img src="./images/pop-up3.jpg" alt="팝업 스토어 서울 연남점">
+                </li>
+            </ul>
+        </div>
+
+        <p class="btn">more</p>
+    </section>
+
+
+    <!-- blog post -->
+    <section class="blog">
+        <h2 class="title">BLOG POST</h2>
+
+        <ul class="blog_list">
+            <li class="flex">
+                <p>#&nbsp;&nbsp; RECIPE: Chocolate Peanut Butter Ice Cream Slices</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 -5 24 24" width="20" fill="#B9B9B9">
+                    <path
+                        d="M5.314 7.071l-4.95-4.95A1 1 0 0 1 1.778.707l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l4.95-4.95z">
+                    </path>
+                </svg>
+            </li>
+
+            <li class="flex">
+                <p>#&nbsp;&nbsp;The World’s Hunger for Chocolate Comes at a Cost</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 -5 24 24" width="20" fill="#B9B9B9">
+                    <path
+                        d="M5.314 7.071l-4.95-4.95A1 1 0 0 1 1.778.707l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l4.95-4.95z">
+                    </path>
+                </svg>
+            </li>
+
+            <li class="flex">
+                <p>#&nbsp;&nbsp;4 Steps For Making Flawless Ice Cream Pies</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 -5 24 24" width="20" fill="#B9B9B9">
+                    <path
+                        d="M5.314 7.071l-4.95-4.95A1 1 0 0 1 1.778.707l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l4.95-4.95z">
+                    </path>
+                </svg>
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- footer 위 이미지+텍스트 슬라이드 텍스트 -->
+    <div class="viewbox3">
+        <div class="slidebox flex">
+            <div class="slide-item flex">
+                <img src="./images/slide-img.png" alt="아이스크림 그림 사진">ben&jerry's
+            </div>
+            <div class="slide-item flex">
+                <img src="./images/slide-img.png" alt="아이스크림 그림 사진">ben&jerry's
+            </div>
+            <div class="slide-item flex">
+                <img src="./images/slide-img.png" alt="아이스크림 그림 사진">ben&jerry's
+            </div>
+            <div class="slide-item flex">
+                <img src="./images/slide-img.png" alt="아이스크림 그림 사진">ben&jerry's
+            </div>
+            <div class="slide-item flex">
+                <img src="./images/slide-img.png" alt="아이스크림 그림 사진">ben&jerry's
+            </div>
+            <div class="slide-item flex">
+                <img src="./images/slide-img.png" alt="아이스크림 그림 사진">ben&jerry's
+            </div>
+            <div class="slide-item flex">
+                <img src="./images/slide-img.png" alt="아이스크림 그림 사진">ben&jerry's
+            </div>
+            <div class="slide-item flex">
+                <img src="./images/slide-img.png" alt="아이스크림 그림 사진">ben&jerry's
+            </div>
+            <div class="slide-item flex">
+                <img src="./images/slide-img.png" alt="아이스크림 그림 사진">ben&jerry's
+            </div>
+            <div class="slide-item flex">
+                <img src="./images/slide-img.png" alt="아이스크림 그림 사진">ben&jerry's
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="footer_list">
+            <ul class="footer_nav flex">
+                <li>문의하기</li>
+                <li>개인정보 보호정책</li>
+                <li>개인정보</li>
+                <li>사이트 맵</li>
+            </ul>
+
+            <ul class="list_bottom flex">
+                <li>
+                    <h3>Connect With Us</h3>
+                    <p>피드백 보내기</p>
+                    <p>구독 취소</p>
+                </li>
+
+                <li>
+                    <h3>Follow Us</h3>
+                    <div class="flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="21px" fill="#fff">
+                            <path
+                                d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25px" viewBox="-2 -2 24 24" fill="currentColor">
+                            <path
+                                d="M14.017 0h-8.07A5.954 5.954 0 0 0 0 5.948v8.07a5.954 5.954 0 0 0 5.948 5.947h8.07a5.954 5.954 0 0 0 5.947-5.948v-8.07A5.954 5.954 0 0 0 14.017 0zm3.94 14.017a3.94 3.94 0 0 1-3.94 3.94h-8.07a3.94 3.94 0 0 1-3.939-3.94v-8.07a3.94 3.94 0 0 1 3.94-3.939h8.07a3.94 3.94 0 0 1 3.939 3.94v8.07z">
+                            </path>
+                            <path
+                                d="M9.982 4.819A5.17 5.17 0 0 0 4.82 9.982a5.17 5.17 0 0 0 5.163 5.164 5.17 5.17 0 0 0 5.164-5.164A5.17 5.17 0 0 0 9.982 4.82zm0 8.319a3.155 3.155 0 1 1 0-6.31 3.155 3.155 0 0 1 0 6.31z">
+                            </path>
+                            <circle cx="15.156" cy="4.858" r="1.237"></circle>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25px" viewBox="-2 -4 24 24" fill="currentColor">
+                            <path
+                                d="M20 1.907a8.292 8.292 0 0 1-2.356.637A4.07 4.07 0 0 0 19.448.31a8.349 8.349 0 0 1-2.607.98A4.12 4.12 0 0 0 13.846.015c-2.266 0-4.103 1.81-4.103 4.04 0 .316.036.625.106.92A11.708 11.708 0 0 1 1.393.754a3.964 3.964 0 0 0-.554 2.03c0 1.403.724 2.64 1.824 3.363A4.151 4.151 0 0 1 .805 5.64v.05c0 1.958 1.415 3.591 3.29 3.963a4.216 4.216 0 0 1-1.08.141c-.265 0-.522-.025-.773-.075a4.098 4.098 0 0 0 3.832 2.807 8.312 8.312 0 0 1-5.095 1.727c-.332 0-.658-.02-.979-.056a11.727 11.727 0 0 0 6.289 1.818c7.547 0 11.673-6.157 11.673-11.496l-.014-.523A8.126 8.126 0 0 0 20 1.907z">
+                            </path>
+                        </svg>
+                    </div>
+                </li>
+
+                <li>
+                    <h3>More Info</h3>
+                    <p>새로운 소식</p>
+                    <p>회사 소개</p>
+
+                </li>
+            </ul>
+
+            <p class="footer_btn"><a href="../index/index.html">포트폴리오 바로가기</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

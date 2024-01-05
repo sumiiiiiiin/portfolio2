@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/*** 공통 css 파일 연결 ***/
+@import url(./common.css);
+
+
+/***** header *****/
+
+/***** main *****/
+main .main-txt img{
+    width: 8rem;
+}
+main .main-txt h2{
+    font-size: 1.8rem;
+}
+main .main-txt h3{
+    /* font-size: 4.5rem; */
+    font-size: 5.7vw;
+}
+main .main_wrapper .main_img{
+    /* width: 55vw; */
+    width: 52%;
+} 
+main .more_btn:hover{
+    color: #fff;
+    background-color: var(--main-color);
+
+    transform: translateX(-7px);
+    transition: 0.5s; 
+}
+
+
+/***** 메인 아래 이미지+텍스트 슬라이드 텍스트 *****/
+.viewbox .slidebox{
+    width: 100%;
+ 
+    animation: flowtxt 30s linear infinite;
+}
+
+
+/***** menu *****/
+.menu .menu_list li{
+    width: 19vw;
+}
+.menu .menu_list h1{
+    margin-top: 1.2rem;
+}
+
+
+/***** 메뉴 아래 슬라이드 텍스트 *****/
+.viewbox2 .slidebox .item-box{
+    width: 400%;
+}
+.viewbox2 .slidebox .item-box{
+    animation: flowtxt2 100s linear infinite ;
+}
+@keyframes flowtxt2{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+
+/***** brand *****/
+.brand .brand_box{
+    margin: 5rem 0 3rem 0;
+}
+.brand .brand_box .brand_txt{
+    width: 72%;
+    padding: 0 4rem ;
+}
+.brand .brand_box .brand_txt .more_btn:hover{
+    color: #fff;
+    background-color: var(--main-color);
+
+    transform: translateX(9px);
+    transition: 0.5s; 
+}
+
+
+/***** pop-up store *****/
+.store .store_list ul{
+    /* background-color: red; */
+    height: 35vw;
+}
+.store .store_list ul li img{
+    width: 25vw;
+    height: 25vw;
+}
+.store .store_list .store_txt{
+    bottom: -16vw;
+}
+
+
+/***** blog post *****/
+
+
+/***** footer 위 이미지+텍스트 슬라이드 텍스트 *****/
+.viewbox3 .slidebox{
+    animation: flowtxt 60s linear infinite;
+}
+
+
+/***** footer *****/
+footer{
+    position: relative;
+}
+footer .footer_btn{
+    position: absolute;
+    right: 10%;
+    bottom: 35%;
+}
+footer .footer_btn:hover{
+    background-color: #fff;
+    color: var(--main-color);
+    transition: 0.5s;
+}
+
