@@ -439,7 +439,7 @@ main .intro_wrapper .up{
   font-size: 1.09vw;
   width: 85%;
   margin: 0 auto;
-  margin-top: 190px;
+  margin-top: 175px;
 
   justify-content: space-between;
   align-items: center;
@@ -449,7 +449,8 @@ main .intro_wrapper .up{
 }
 .about .me .me_sub1 p{
   font-weight: 500;
-  line-height: 2.45vw;
+  /* line-height: 2.45vw; */
+  line-height: 49px;
 }
 .about .me_sub2{
   width: 45%;
