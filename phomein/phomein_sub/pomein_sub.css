@@ -132,18 +132,19 @@ main img{
 
 
 /***** publishing *****/
+/***** publishing *****/
 .publishing{
   width: 100%;
 }
 .publishing .publishing_txt{
   width: 45%;
 }
-.publishing .publishing_txt li{
+.publishing .publishing_txt h3{
   font-size: 1.05vw;
   font-weight: 600;
   margin-bottom: 2vw;
 }
-.publishing .publishing_txt li p{
+.publishing .publishing_txt li{
   font-size: 0.95vw;
   font-weight: 400;
   line-height: 1.7;
