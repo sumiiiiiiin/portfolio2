@@ -245,6 +245,31 @@ main img{
 }
 
 
+/***** review *****/
+.review{
+  width: 100%;
+}
+.review .review_txt{
+  width: 45%;
+}
+.review .review_txt h2{
+  font-size: 1.05vw;
+  font-weight: 600;
+  margin-bottom: 2vw;
+}
+.review .review_txt li{
+  font-size: 1.05vw;
+  font-weight: 600;
+  margin-bottom: 2vw;
+}
+.review .review_txt li p{
+  font-size: 0.85vw;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 1vw 0 0 1.3vw;
+}
+
+
 /***** 사이트 보러가기 *****/
 .site_btn{
   width: 200px;
