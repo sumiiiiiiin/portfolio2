@@ -152,23 +152,30 @@ main img{
 
 
 /***** Problems & Solution *****/
-.problems{
+.problem{
   width: 100%;
 }
-.problems .problems_txt{
+.problem .problem_txt{
   width: 45%;
 }
-.problems .problems_txt li{
+.problem .problem_txt h3{
   font-size: 1.05vw;
   font-weight: 600;
   margin-bottom: 2vw;
 }
-.problems .problems_txt li p{
-  font-size: 0.95vw;
-  font-weight: 400;
-  line-height: 1.7;
+.problem .problem_txt li{
+  font-size: 1vw;
+  font-weight: 600;
+  margin-bottom: 2vw;
   padding: 1vw 0 0 1.3vw;
 }
+.problem .problem_txt li p{
+  font-size: 0.9vw;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 1vw 0 0 1.3vw;
+}
+
 
 /***** 사이트 보러가기 *****/
 .site_btn{

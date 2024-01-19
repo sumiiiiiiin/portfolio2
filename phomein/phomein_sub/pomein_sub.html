@@ -135,31 +135,34 @@
 
 
   <!-- Problems & Solution -->
-  <section class="problems">
+  <section class="problem">
     <div class="layout flex">
       <h2 class="title">Problems <br><span>& Solution</span></h2>
 
-      <ul class="problems_txt" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1500">
-        <li class="dot">양쪽 영역 hover 시 이미지가 같이 움직이는 문제 발생
-          <p>각 영역 hover 시 영역의 width 값만 변경되는데 해당 영역에 위치한 이미지가 같이 움직임</p>
-          <p><strong><span class="point">width:auto 와
-                transform: translate() </span></strong>
-            값으로 위치 조절 후 해결함
-          </p>
-        </li>
-        <li class="dot">메인의 텍스트 AOS가 실행될 때 백그라운드 gif가 어둡게 실행되지 않는 문제 발생
-          <p>gif를 background: url()로 삽입한 후 linear-gradient(), background-blend-mode: multiply로
-            어두워지도록 하였으나 처음부터 어두운 상태인 문제 발생</p>
-          <p><strong><span class="point">객체의 'load' 이벤트를 기다리는 이벤트 리스너를 설정</span></strong>, 이벤트 리스너 함수 내부에서
-            <strong><span class="point">setTimeout 함수</span></strong>를 사용,
-            setTimeout 함수는 <strong><span class="point">지정한 시간이 경과한 후 특정
-                함수를 실행</span></strong>할 수 있게 해주고 setTimeout의 두 번째 인자는 함수가 실행되기 전의 지연 시간을 밀리초로 실행되도록 설정,
-            'brightness(0.5)'; 적용하여 요소의
-            밝기를 조절하여
-            문제를 해결함
-          </p>
-        </li>
-      </ul>
+      <div class="problem_txt" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1500">
+        <h3 class="dot">문제 및 해결</h3>
+        <ul class="sub_txt">
+          <li>1. 양쪽 영역 hover 시 이미지가 같이 움직이는 문제 발생
+            <p>각 영역 hover 시 영역의 width 값만 변경되는데 해당 영역에 위치한 이미지가 같이 움직임</p>
+            <p><strong><span class="point">width:auto 와
+                  transform: translate() </span></strong>
+              값으로 위치 조절 후 해결함
+            </p>
+          </li>
+          <li>2. 메인의 텍스트 AOS가 실행될 때 백그라운드 gif가 어둡게 실행되지 않는 문제 발생
+            <p>gif를 background: url()로 삽입한 후 linear-gradient(), background-blend-mode: multiply로
+              어두워지도록 하였으나 처음부터 어두운 상태인 문제 발생</p>
+            <p><strong><span class="point">객체의 'load' 이벤트를 기다리는 이벤트 리스너를 설정</span></strong>, 이벤트 리스너 함수 내부에서
+              <strong><span class="point">setTimeout 함수</span></strong>를 사용,
+              setTimeout 함수는 <strong><span class="point">지정한 시간이 경과한 후 특정
+                  함수를 실행</span></strong>할 수 있게 해주고 setTimeout의 두 번째 인자는 함수가 실행되기 전의 지연 시간을 밀리초로 실행되도록 설정,
+              'brightness(0.5)'; 적용하여 요소의
+              밝기를 조절하여
+              문제를 해결함
+            </p>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
