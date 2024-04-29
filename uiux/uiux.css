@@ -1,0 +1,311 @@
+@charset "utf-8";
+
+@import url(../common/common.css);
+
+/** 공통 css **/
+.highlight{
+  background: linear-gradient(
+  180deg, rgba(255, 255, 255, 0) 50%, #9355d18a 50% );
+}
+
+
+/**** header ****/
+header{
+  width: 100%;
+  height: 7vh;
+  line-height: 7vh;
+  
+  background-color: #F3F8FF;
+  border-bottom: 2px solid #427D9D;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+header nav{
+  width: 90%;
+  margin: 0 auto;
+  
+  text-transform: uppercase;
+  font-size: 1.1vw;
+  font-weight: 700;
+
+  justify-content: space-between;
+  align-items: center;
+}
+header nav h1{
+  font-weight: 700;
+}
+header nav menu li{
+  margin: 0 3vw;
+}
+header nav menu li:hover{
+  color: #427D9D;
+  transition: 0.5s;
+  transform: translateY(-5px);
+} 
+
+
+/***** main *****/
+main{
+  width: 100%;
+  height: calc(100vh - 7vh);
+
+  display: flex;
+  align-items: center;
+  background-color: #F3F8FF;
+}
+main .layout{
+  padding: 3vw;
+
+  justify-content: space-between;
+  align-items: center;
+}
+main .txt{
+  width: 50%;
+}
+main .txt h2{
+  font-family: 'establishRetrosansOTF';
+  font-size: 3vw;
+  font-weight: 700;
+}
+main .txt h3{
+  font-size: 1.5vw;
+  font-weight: 600;
+  margin: 2vw 0;
+}
+main .txt .sub_txt {
+  font-size: 0.9vw;
+}
+main .txt .sub_txt li{
+  margin-bottom: 0.5vw;
+}
+main img{
+  width: 50%;
+  height: auto;
+}
+
+
+/***** overview *****/
+.overview{
+  width: 100%;
+}
+.overview .layout .overview_txt{
+  width: 45%;
+}
+.overview .layout .overview_txt li{
+  font-size: 1.05vw;
+  font-weight: 600;
+  margin-bottom: 2vw;
+}
+.overview .layout .overview_txt li p{
+  font-size: 0.95vw;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 1vw 0 0 1.3vw;
+}
+
+
+/***** 진행과정 *****/
+.process{
+  width: 100%;
+}
+.process .process_txt{
+  width: 45%;
+}
+.process .process_txt h3{
+  font-size: 1.05vw;
+  font-weight: 600;
+  margin-bottom: 1vw;
+}
+.process .process_txt li{
+  font-size: 0.95vw;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 1vw 0 0 1.3vw;
+}
+.process .process_txt li p{
+  font-size: 0.95vw;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 1vw 0 0 1.3vw;
+}
+.process .process_txt .list_top{
+  margin-bottom: 2.3vw;
+}
+
+
+/***** ux vision*****/
+.vision{
+  width: 100%;
+}
+.vision .flex{
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.vision .vision_txt{
+  width: 45%;
+}
+.vision .vision_txt h3{
+  font-size: 1.05vw;
+  font-weight: 600;
+  margin-bottom: 2vw;
+}
+.vision .vision_txt p{
+  font-size: 0.95vw;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 1vw 0 0 1.3vw;
+}
+.vision .txt_bottom {
+  margin-top: 1.5vw;
+  text-align: center;
+  padding: 3vw 0;
+}
+.vision .txt_bottom li{
+  box-shadow: 4px 4px 10px 1px rgba(191, 200, 243, 0.82);
+  border: 1px solid #F3F8FF;
+  border-radius: 40px;
+
+  padding: 1.5vw;
+  font-size: 1.05vw;
+  font-weight: 600;
+  width: 45%;
+
+  margin: 0 auto;
+  margin-bottom: 1.15vw;
+}
+
+
+/***** style guide *****/
+.style{
+  width: 100%;
+}
+.style .style_txt{
+  width: 45%;
+}
+.style .style_txt li{
+  font-size: 1.05vw;
+  font-weight: 600;
+  margin-bottom: 2vw;
+}
+.style .style_txt li p{
+  font-size: 0.95vw;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 1vw 0 0 1.3vw;
+}
+.style .style_txt li img{
+  width: 83%;
+  padding: 1vw 0 0 1.3vw;
+}
+
+
+/***** prototype *****/
+.prototype{
+  width: 100%;
+}
+.prototype .prototype_txt{
+  width: 100%;
+  padding-top: 5vw;
+}
+.prototype .prototype_box {
+  width: 87%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 7vw;
+}
+.prototype .prototype_box .txt_box{
+  width: 41%;
+}
+.prototype .prototype_box .txt_box h3{
+  font-size: 1.1vw;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.prototype .prototype_box .txt_box p {
+  font-size: 0.95vw;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.prototype .prototype_box:first-child img {
+  width: 18%;
+}
+ .prototype .prototype_box img {
+  width: 35%;
+}
+.prototype .prototype_box:nth-child(4) .txt_box p{
+  margin-bottom: 1.3vw;
+}
+
+
+/***** Problems & Solution *****/
+.problem{
+  width: 100%;
+}
+.problem .problem_txt{
+  width: 45%;
+}
+.problem .problem_txt li{
+  font-size: 1vw;
+  font-weight: 600;
+  margin-bottom: 2vw;
+  padding: 1vw 0 0 1.3vw;
+}
+.problem .problem_txt li p{
+  font-size: 0.9vw;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 1vw 0 0 1.3vw;
+}
+
+
+/***** review *****/
+.review{
+  width: 100%;
+}
+.review .review_txt{
+  width: 45%;
+}
+.review .review_txt h2{
+  font-size: 1.05vw;
+  font-weight: 600;
+  margin-bottom: 2vw;
+}
+.review .review_txt li{
+  font-size: 1.05vw;
+  font-weight: 600;
+  margin-bottom: 2vw;
+}
+.review .review_txt li p{
+  font-size: 0.85vw;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 1vw 0 0 1.3vw;
+}
+
+
+/***** 사이트 보러가기 *****/
+.site_btn{
+  width: 12vw;
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid #427D9D;
+  font-weight: 600;
+  font-size: 1.005vw;
+
+  padding: 0.8vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+
+  transition: 0.5s;
+}
+.site_btn:hover{
+  transition: 0.5s;
+  border-radius: 40px;
+  background-color: #427D9D;
+  color: #fff;
+}
