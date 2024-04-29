@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>이수민_PORTFOLIO</title>
+    <!-- reset -->
+    <link rel="stylesheet" href="../../common/reset.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="../../index/images/favicon.ico" type="image/x-icon">
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="../../common/fonts.css">
+
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- 내가 쓴 css -->
+    <link rel="stylesheet" href="./posco_sub.css">
+
+    <!-- jQuery -->
+    <script src="../../common/jquery-3.7.0.min.js"></script>
+
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- swiper js -->
+    <script src="../../common/swiper-bundle.min.js"></script>
+
+    <!-- 내가 쓴 js -->
+    <script defer src="./posco_sub.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav class="flex">
+            <h1><a href="../../index/index.html">sumin's portfolio🍉</a></h1>
+
+            <menu class="flex">
+                <li><a href="../../index/index.html#about">about</a></li>
+                <li><a href="../../index/index.html#project">project</a></li>
+                <li><a href="../../index/index.html#skill">skills</a></li>
+            </menu>
+        </nav>
+    </header>
+
+
+    <!-- main -->
+    <main>
+        <div class="layout flex">
+            <div class="txt">
+                <h2> <span class="highlight">포스코 POSCO</span></h2>
+                <h3>포스코 반응형 웹사이트 (Main page) </h3>
+
+                <ul class="sub_txt">
+                    <li class="square">2023.06.08 - 2023.06.15</li>
+                    <li class="square">HTML&nbsp&nbspCSS&nbsp&nbspJS&nbsp&nbspJQUERY</li>
+                </ul>
+            </div>
+
+            <img src="./images/posco.png" alt="포스코 메인사진">
+        </div>
+    </main>
+
+
+    <!-- overview -->
+    <section class="overview">
+        <div class="layout flex line">
+            <h2 class="title">Overview</h2>
+
+            <ul class="overview_txt" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1500">
+                <li class="square">목표
+                    <p>포스코 기업이 내세운 친환경 철강 전문성이 돋보일 수 있도록 리디자인 하고자 했습니다</p>
+                    <p>라인과 여백을 사용해 심플하면서도 조화롭게 구성했으며 깔끔한 이미지를 위해 정돈된 레이아웃과 가독성 있는 폰트를 사용했습니다
+                    </p>
+                </li>
+                <li class="square">기여도
+                    <p>개인 프로젝트 (100%)</p>
+                </li>
+                <li class="square">Mobile 우선 반응형 웹
+                    <p> -Mobile : 500px &nbsp; -Tablet: 768px &nbsp; -PC: 1165px</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- style guide -->
+    <section class="style">
+        <div class="layout flex line">
+            <h2 class="title">Style guide</h2>
+
+            <ul class="style_txt" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1500">
+                <li class="square">Keyword
+                    <p># 기술력 # 글로벌</p>
+                </li>
+                <li class="square">Fonts
+                    <p>Noto Sans / Metropolis</p>
+                </li>
+                <li class="square">Color<br>
+                    <img src="./images/posco_color.png" alt="포스코 컬러표">
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- publishing -->
+    <section class="publishing">
+        <div class="layout flex line">
+            <h2 class="title">Publishing</h2>
+
+            <ul class="publishing_txt" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1500">
+                <li>미디어 쿼리를 활용한 반응형 웹 제작</li>
+                <li>flex를 활용한 레이아웃 구축</li>
+                <li>CSS, JavaScript 이용한 동적 효과 구현</li>
+                <li>모바일 버전 메뉴 아이콘 클릭 시 드롭다운 메뉴 구현</li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <!-- Problems & Solution -->
+    <section class="problem">
+        <div class="layout flex">
+            <h2 class="title">Problems<br>&nbsp&nbsp& Solution</h2>
+
+            <ul class="problem_txt" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1500">
+                <li>1. 기존의 video를 활용하였으나 기본으로 고정된 사이즈로 인하여 비율 제어 문제 발생
+                    <p>유사한 video로 대체하여 iframe 태그를 이용해 비율 제어 문제를 해결함</p>
+                </li>
+                <li>2. 이미지 hover 시 slide-up 텍스트 박스가 이미지 크기에 맞지 않는 문제 발생
+                    <p>img 태그에 사용한 이미지 사이즈의 비율이 1 : 1이 아니어서 사이즈 수정 후 해결함</p>
+                </li>
+                <li>3. 스크롤 위치에 따른 nav 바 변화가 구현되지 않는 문제 발생
+                    <p>JavaScript marginTop으로 이벤트 발생할 것이라 생각하였지만 해결 불가<br> JavaScript transform:'translate(0)'을 적용시켰더니
+                        문제를 해결함
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- 사이트 보러가기 -->
+    <p class="site_btn">
+        <a href="../posco.html" target="_blank">포스코 보러가기</a>
+    </p>
+
+
+    <!-- top 버튼 -->
+    <p class="top">
+        <a href="#top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24">
+                <path
+                    d="M10.707 5.293a.997.997 0 0 0-1.414 0L5.05 9.536a1 1 0 0 0 1.414 1.414L9 8.414V14a1 1 0 0 0 2 0V8.414l2.536 2.536a1 1 0 0 0 1.414-1.414l-4.243-4.243zM10 20C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10-4.477 10-10 10z">
+                </path>
+            </svg></a>
+    </p>
+</body>
+
+</html>

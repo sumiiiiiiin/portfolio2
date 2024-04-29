@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+@import url(../../common/common.css);
+
+/** 공통 css **/
+.highlight{
+  background: linear-gradient(
+  180deg, rgba(255, 255, 255, 0) 50%, #5589d18a 50% );
+}
+
+
+/**** header ****/
+header{
+  width: 100%;
+  height: 7vh;
+  line-height: 7vh;
+  
+  background-color: #F3F8FF;
+  border-bottom: 2px solid #427D9D;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+header nav{
+  width: 90%;
+  margin: 0 auto;
+  
+  text-transform: uppercase;
+  font-size: 1.1vw;
+  font-weight: 700;
+
+  justify-content: space-between;
+  align-items: center;
+}
+header nav h1{
+  font-weight: 700;
+}
+header nav menu li{
+  margin: 0 3vw;
+}
+header nav menu li:hover{
+  color: #427D9D;
+  transition: 0.5s;
+  transform: translateY(-5px);
+} 
+
+
+/***** main *****/
+main{
+  width: 100%;
+  height: calc(100vh - 7vh);
+
+  display: flex;
+  align-items: center;
+  background-color: #F3F8FF;
+}
+main .layout{
+  padding: 3vw;
+
+  align-items: center;
+}
+main .txt{
+  width: 50%;
+}
+main .txt h2{
+  font-family: 'Metropolis-SemiBold';
+  font-size: 3vw;
+  font-weight: 700;
+}
+main .txt h3{
+  font-size: 1.5vw;
+  font-weight: 600;
+  margin: 2vw 0;
+}
+main .txt .sub_txt {
+  font-size: 0.9vw;
+}
+main .txt .sub_txt li{
+  margin-bottom: 0.5vw;
+}
+main img{
+  width: 50%;
+  height: auto;
+}
+
+
+/***** overview *****/
+.overview{
+  width: 100%;
+}
+.overview .layout .overview_txt{
+  width: 45%;
+}
+.overview .layout .overview_txt li{
+  font-size: 1.05vw;
+  font-weight: 600;
+  margin-bottom: 2vw;
+}
+.overview .layout .overview_txt li p{
+  font-size: 0.95vw;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 1vw 0 0 1.3vw;
+}
+
+
+/***** style guide *****/
+.style{
+  width: 100%;
+}
+.style .style_txt{
+  width: 45%;
+}
+.style .style_txt li{
+  font-size: 1.05vw;
+  font-weight: 600;
+  margin-bottom: 2vw;
+}
+.style .style_txt li p{
+  font-size: 0.95vw;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 1vw 0 0 1.3vw;
+}
+.style .style_txt li img{
+  width: 53%;
+  padding: 1vw 0 0 1.3vw;
+}
+
+
+/***** publishing *****/
+.publishing{
+  width: 100%;
+}
+.publishing .publishing_txt{
+  width: 45%;
+}
+.publishing .publishing_txt li{
+  font-size: 0.95vw;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 1vw 0 0 1.3vw;
+}
+
+
+/***** Problems & Solution *****/
+.problem{
+  width: 100%;
+}
+.problem .problem_txt{
+  width: 45%;
+}
+.problem .problem_txt li{
+  font-size: 1vw;
+  font-weight: 600;
+  margin-bottom: 2vw;
+  padding: 1vw 0 0 1.3vw;
+}
+.problem .problem_txt li p{
+  font-size: 0.9vw;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 1vw 0 0 1.3vw;
+}
+
+
+/***** 사이트 보러가기 *****/
+.site_btn{
+  width: 12vw;
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid #427D9D;
+  font-weight: 600;
+  font-size: 1.005vw;
+
+  padding: 0.8vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+
+  transition: 0.5s;
+}
+.site_btn:hover{
+  transition: 0.5s;
+  border-radius: 40px;
+  background-color: #427D9D;
+  color: #fff;
+}
