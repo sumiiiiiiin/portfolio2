@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>포메인</title>
+    <!-- reset -->
+    <link rel="stylesheet" href="../common/reset.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="./images/main.png" type="image/x-icon">
+
+    <!-- fonts Noto sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../common/fonts.css">
+
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- 내가 쓴 css -->
+    <link rel="stylesheet" href="./phomein.css">
+
+    <!-- jQuery -->
+    <script src="../common/jquery-3.7.0.min.js"></script>
+
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- swiper js -->
+    <script src="../common/swiper-bundle.min.js"></script>
+
+    <!-- 내가 쓴 js -->
+    <script defer src="./phomein.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="header_wrapper flex">
+
+            <h1>로고</h1>
+
+            <div class="menu_nav flex">
+                <ul class="flex">
+                    <li><a href="#">브랜드</a></li>
+                    <li><a href="#">메뉴 소개</a></li>
+                    <li><a href="#">매장 안내</a></li>
+                    <li><a href="#">고객지원</a></li>
+                    <div class="new">
+                        <a href="#">창업 페이지</a>
+                    </div>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- main -->
+    <div class="main">
+        <!-- main이미지 영역 어둡게 하기 위한 id추가 -->
+        <div class="bg_video flex" id="brightenImage">
+            <div class="video_left">
+                <div class="left1">위 비디오</div>
+                <div class="left2">아래 비디오</div>
+            </div>
+
+            <div class="video_right">오른쪽 비디오</div>
+        </div>
+
+        <div class="video_txt">
+            <h1 data-aos="fade-left" data-aos-delay="1100" data-aos-duration="500">
+                깨끗하고 건강한<br><span class="bold">쌀국수</span></h1>
+
+            <div class="btn" data-aos="fade-left" data-aos-delay="1400" data-aos-duration="700">
+                <a href="#" class="link2"><span class="link_txt">자세히 보기</span></a>
+            </div>
+        </div>
+
+        <img src="./images/main.png" alt="소고기 쌀국수" class="main_img" data-aos="fade-up" data-aos-delay="2300"
+            data-aos-duration="900">
+    </div>
+
+
+    <!-- section1 소개 3가지 부분 -->
+    <div class="phomain">
+        <div class="intro">
+
+            <div class="top flex">
+                <div class="box1 box flex">
+                    <h1>국내 유일</h1>
+
+                    <div class="box-left1">
+                        <p class="title">깔끔한 향과 맛</p>
+                        <p class="sub">포메인은 3기작이 가능한 메콩 델타 지역에서 1년 365일 햅쌀을 공급받아 해썹 인증 ‘햅쌀 면’을 생산합니다.</p>
+
+                        <button><span>브랜드 바로가기</span></button>
+                    </div>
+                </div>
+
+                <img src="./images/main2.jpg" alt="쌀국수 만드는 요리사가 그릇 위에 고수를 올리고 있다" class="img1" data-aos="zoom-in"
+                    data-aos-duration="500">
+            </div>
+
+            <div class="middle flex">
+                <img src="./images/main3.jpg" alt="젓가락으로 쌀국수를 집어 올리는 사진" class="img2" data-aos="zoom-in"
+                    data-aos-duration="500">
+
+                <div class="box2 box flex">
+                    <div class="box-right">
+                        <p class="title">현지 법인 쌀국수 제조공장</p>
+                        <p class="sub">쌀 한 톨부터 쌀국수 한 그릇까지<br> 포메인이 직접 만듭니다</p>
+
+                        <button><span>메뉴안내</span></button>
+                    </div>
+
+                    <h1>국내 최초</h1>
+                </div>
+            </div>
+
+            <div class="bottom flex">
+                <div class="box3 box flex">
+                    <h1>국내 최고</h1>
+
+                    <div class="box-left2">
+                        <p class="title">17년의 노하우 전수</p>
+                        <p class="sub">포메인이 재해석한 차별화된 '맛'의 차이를 만들어 나가겠습니다.</p>
+                        <button><span>자세히 보기</span></button>
+                    </div>
+                </div>
+
+                <img src="./images/main4.gif" alt="완성된 쌀국수가 내어지는 영상" class="video" data-aos="zoom-in"
+                    data-aos-duration="1000">
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- section2 좌우 스크립트 부분 -->
+    <div class="side_intro animate" id="animateOnScroll">
+        <div class="side_main flex">
+
+            <div class="side_left">
+                <h1>큰 글씨 이미지</h1>
+
+                <img src="./images/page_left.png" alt="소고기 쌀국수 한 그릇" class="left_img">
+
+                <div class="left_txt flex">
+                    <h2>작은 글씨 이미지</h2>
+                    <p>베트남 쌀국수에 포메인스러움을 더하며
+                        쌀국수에 대한 자부심과 우리만의 노하우가 담겨있습니다.</p>
+                </div>
+            </div>
+
+            <div class="side_right">
+                <h1>큰 글씨 이미지</h1>
+
+                <img src="./images/page_right.png" alt="배달 서비스 임시 사진" class="right_img">
+
+                <div class="right_txt">
+                    <p>포메인만의 레시피로 재해석한 32가지의 베트남 요리를 언제, 어디서든 매장에서 즐기던 맛 그대로 만나보세요.</p>
+                    <h2>작은 글씨 이미지</h2>
+                </div>
+            </div>
+
+            <a href="#" class="btn"><span>자세히 보기</span> </a>
+
+        </div>
+    </div>
+
+
+    <!-- section3 사진 여러개 나눠진 부분 -->
+    <div class="img_intro">
+        <div class="intro_box">
+
+            <div class="top_txt flex">
+                <div class="txt">
+                    <p class="bold">끝까지 맛있는 한 그릇</p>
+                    <p>국내 최초 국내 유일 햅쌀 면 쌀국수 전문점</p>
+                </div>
+
+                <div class="sns_line">라인</div>
+
+                <ul class="sns flex">
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-7 -2 24 24" width="28" fill="#8D8D8B">
+                                <path
+                                    d="M2.046 3.865v2.748H.032v3.36h2.014v9.986H6.18V9.974h2.775s.26-1.611.386-3.373H6.197V4.303c0-.343.45-.805.896-.805h2.254V0H6.283c-4.34 0-4.237 3.363-4.237 3.865z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -4 24 24" width="28" fill="#8D8D8B">
+                                <path
+                                    d="M20 1.907a8.292 8.292 0 0 1-2.356.637A4.07 4.07 0 0 0 19.448.31a8.349 8.349 0 0 1-2.607.98A4.12 4.12 0 0 0 13.846.015c-2.266 0-4.103 1.81-4.103 4.04 0 .316.036.625.106.92A11.708 11.708 0 0 1 1.393.754a3.964 3.964 0 0 0-.554 2.03c0 1.403.724 2.64 1.824 3.363A4.151 4.151 0 0 1 .805 5.64v.05c0 1.958 1.415 3.591 3.29 3.963a4.216 4.216 0 0 1-1.08.141c-.265 0-.522-.025-.773-.075a4.098 4.098 0 0 0 3.832 2.807 8.312 8.312 0 0 1-5.095 1.727c-.332 0-.658-.02-.979-.056a11.727 11.727 0 0 0 6.289 1.818c7.547 0 11.673-6.157 11.673-11.496l-.014-.523A8.126 8.126 0 0 0 20 1.907z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="28" fill="#8D8D8B">
+                                <path
+                                    d="M14.017 0h-8.07A5.954 5.954 0 0 0 0 5.948v8.07a5.954 5.954 0 0 0 5.948 5.947h8.07a5.954 5.954 0 0 0 5.947-5.948v-8.07A5.954 5.954 0 0 0 14.017 0zm3.94 14.017a3.94 3.94 0 0 1-3.94 3.94h-8.07a3.94 3.94 0 0 1-3.939-3.94v-8.07a3.94 3.94 0 0 1 3.94-3.939h8.07a3.94 3.94 0 0 1 3.939 3.94v8.07z">
+                                </path>
+                                <path
+                                    d="M9.982 4.819A5.17 5.17 0 0 0 4.82 9.982a5.17 5.17 0 0 0 5.163 5.164 5.17 5.17 0 0 0 5.164-5.164A5.17 5.17 0 0 0 9.982 4.82zm0 8.319a3.155 3.155 0 1 1 0-6.31 3.155 3.155 0 0 1 0 6.31z">
+                                </path>
+                                <circle cx="15.156" cy="4.858" r="1.237"></circle>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -5 24 24" width="28" fill="#8D8D8B">
+                                <path
+                                    d="M15.812.017H4.145C1.855.017 0 1.852 0 4.116v5.768c0 2.264 1.856 4.1 4.145 4.1h11.667c2.29 0 4.145-1.836 4.145-4.1V4.116c0-2.264-1.856-4.1-4.145-4.1zM13.009 7.28L7.552 9.855a.219.219 0 0 1-.314-.196V4.35c0-.161.173-.266.318-.193l5.458 2.735a.216.216 0 0 1-.005.389z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="img_box flex">
+                <li class="list1" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">
+                    <img src="./images/img1.png" alt="쌀국수 한 그릇">
+                    <div class="top">
+                        <a href="#" class="link2"><span class="link_txt">자세히 보기</span></a>
+                    </div>
+                </li>
+
+                <li class="list2" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+                    <img src="./images/img2.png" alt="쌀국수면 묶음이 놓여져 있는 사진">
+                    <img src="./images/img3.png" alt="요리사가 주방에서 웍에 불을 붙여 요리하고 있다">
+                </li>
+
+                <li class="list3" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="1000">
+                    <img src="./images/img4.png" alt="쌀국수 한 그릇과 반찬이 함꼐 차려져 있는 사진">
+                    <img src="./images/logo.png" alt="포메인 로고 사진">
+                </li>
+
+                <li class="list4" data-aos="fade-up" data-aos-delay="2000" data-aos-duration="1000">
+                    <img src="./images/img5.png" alt="포메인의 매장 사진">
+                    <img src="./images/img6.png" alt="쌀국수면을 만지고 있는 사람의 손">
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+
+    <!-- 언론 기사 -->
+    <div class="news">
+        <div class="notice-list">
+
+            <h1>포메인 <span class="bold">소식</span></h1>
+
+            <div class="big_box">
+                <div class="news_box flex">
+                    <div class="date">
+                        <div class="day">05</div>
+                        <div class="year">2023.05</div>
+                    </div>
+
+                    <div class="news_txt">
+                        <p class="title">17년 차 쌀국수 브랜드 포메인, 햅쌀 면 베트남 공장 위생, 안전성 입증</p>
+                        <p class="sub"> 포메인이 운영하는 쌀국수 공장 포시즌이 현지실사에서 적합 판정을 받았다.</p>
+                    </div>
+
+                    <img src="./images/news1.png" alt="베트남 현지 공장 사진3개가 있다" class="news_img1">
+                </div>
+
+                <div class="news_box flex">
+                    <div class="date">
+                        <div class="day">16</div>
+                        <div class="year">2021.09</div>
+                    </div>
+
+                    <div class="news_txt">
+                        <p class="title">포메인, 비대면 명절 선물 '외식 모바일 상품권' 판매</p>
+                        <p class="sub">베트남 쌀국수 전문점 포메인(PHOMEIN) 비대면으로 선물이 가능한 외식 모바일 상품권을 판매하고 있다고 전했다. 포메인은 15년간 ‘안전한
+                            식재료·정직한 먹거리’를 이념으로 국내 쌀국수 업계를 이끌어온 대한민국 대표 쌀국수 브랜드다.
+                        </p>
+                    </div>
+
+                    <img src="./images/news2.png" alt="편지봉투 모양의 모바일 상품권과 모바일 화면에 상품권이 보여진다" class="news_img2">
+                </div>
+
+                <div class="news_box flex">
+                    <div class="date">
+                        <div class="day">16</div>
+                        <div class="year">2020.10</div>
+                    </div>
+
+                    <div class="news_txt">
+                        <p class="title">포메인, 업계 최초 쌀국수 배달 </p>
+                        <p class="sub">식음료업계가 언택트 마케팅을 펼치면서 베트남 쌀국수 대표 프랜차이즈 브랜드 포메인이 쌀국수 딜리버리 서비스로 가시적인 성과를 나타내고 있다고
+                            알려왔다.
+                            8일 포메인에 따르면 2014년 쌀국수 업계 최초로 딜리버리 서비스를 도입한 포메인은 시장 트렌드 선점과 가맹점 매출 창구 확장에 초점을 맞추고 다각도로 서비스
+                            매뉴얼을
+                            구축했다.</p>
+                    </div>
+
+                    <img src="./images/news3.png" alt="포장용기에 담겨진 포메인 메뉴가 모여있다" class="news_img3">
+                </div>
+            </div>
+
+            <div class="btn">
+                <a href="#" class="link2"><span class="link_txt">소식 더 보기</span></a>
+            </div>
+
+            <div class="color_box">박스 맞추기</div>
+
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="info">
+
+            <div class="info_top">
+                <ul class="menu flex">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보 취급방침</a></li>
+                    <li><a href="#">이메일 무단 수집 거부</a></li>
+                    <li><a href="#">고객의 소리</a></li>
+                </ul>
+
+                <p>주소 : 경기도 성남시 분당구 황새울로 216, 401호(수내동, 휴맥스빌리지)<br>주식회사 데일리킹&nbsp;&nbsp;&nbsp;&nbsp; 대표전화 : 1899-2422
+                </p>
+            </div>
+
+            <div class="info_bottom flex">
+                <p>smlee890@hanmail.net</p>
+
+                <div class="btn">
+                    <a href="../index/index.html" class="link2"><span class="link_txt">포트폴리오 바로 가기</span></a>
+                </div>
+            </div>
+
+            <!-- top btn -->
+            <div class="top">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                        <path d="M450-160v-526L202-438l-42-42 320-320 320 320-42 42-248-248v526h-60Z" />
+                    </svg></a>
+                <a href="#">
+                    <p>TOP</p>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!--  우측 상담하기 btn -->
+    <div class="talk">
+        <img src="./images/btn_talk.png" alt="말풍선 모양의 버튼">
+        <img src="./images/btn_kakao.png" alt="카카오톡 모양의 버튼">
+    </div>
+
+</body>
+
+</html>

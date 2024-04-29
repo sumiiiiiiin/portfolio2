@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>이수민_PORTFOLIO</title>
+  <!-- reset -->
+  <link rel="stylesheet" href="../../common/reset.css">
+
+  <!-- favicon -->
+  <link rel="icon" href="../../index/images/favicon.ico" type="image/x-icon">
+
+  <!-- fonts -->
+  <link rel="stylesheet" href="../../common/fonts.css">
+
+  <!-- AOS css -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- 내가 쓴 css -->
+  <link rel="stylesheet" href="./pomein_sub.css">
+
+  <!-- jQuery -->
+  <script src="../../common/jquery-3.7.0.min.js"></script>
+
+  <!-- AOS js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- swiper js -->
+  <script src="../../common/swiper-bundle.min.js"></script>
+
+  <!-- 내가 쓴 js -->
+  <script defer src="./pomein_sub.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <nav class="flex">
+      <h1><a href="../../index/index.html">sumin's portfolio🍉</a></h1>
+
+      <menu class="flex">
+        <li><a href="../../index/index.html#about">about</a></li>
+        <li><a href="../../index/index.html#project">project</a></li>
+        <li><a href="../../index/index.html#skill">skills</a></li>
+      </menu>
+    </nav>
+  </header>
+
+
+  <!-- main -->
+  <main>
+    <div class="layout flex">
+      <div class="txt">
+        <h2><span class="highlight">Phở Mēin</span></h2>
+        <h3>포메인 웹사이트 (Main Page)</h3>
+
+        <ul class="sub_txt">
+          <li class="square">2023.07.21 - 2023.07.26</li>
+          <li class="square">HTML&nbsp&nbspCSS&nbsp&nbspJS&nbsp&nbspJQUERY</li>
+        </ul>
+      </div>
+
+      <img src="./images/phomein.png" alt="포메인 메인사진">
+    </div>
+  </main>
+
+
+  <!-- overview -->
+  <section class="overview">
+    <div class="layout flex line">
+      <h2 class="title">Overview</h2>
+
+      <ul class="overview_txt" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1500">
+        <li class="square">목표
+          <p>이번 프로젝트는 그동안 배운 JavaScript와 jQuery를 활용하여 포메인만의 전문성을 보여주는 것을 목표로 하였습니다</p>
+          <p>가독성 있는 폰트를 사용하였고 여백을 이용하여 여러 이미지를 조화롭게 구성했습니다<br>
+            대칭을 이루는 비슷한 콘텐츠를 동작을 실행시켜 지루하지 않게 구현했습니다</p>
+          <p>포메인의 색상은 돋보이고 포메인만의 전문성이 돋보일 수 있도록 리디자인 하고자 했습니다
+          </p>
+        </li>
+        <li class="square">기여도
+          <p>개인 프로젝트 (100%)</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- style guide -->
+  <section class="style">
+    <div class="layout flex line">
+      <h2 class="title">Style guide</h2>
+
+      <ul class="style_txt" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1500">
+        <li class="square">Keyword
+          <p># 깔끔함 # 차별화 # 재해석</p>
+        </li>
+        <li class="square">Fonts
+          <p>Hahmlet / Pretendard</p>
+        </li>
+        <li class="square">Color<br>
+          <img src="./images/phomein_color.png" alt="포메인 컬러표">
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- publishing -->
+  <section class="publishing">
+    <div class="layout flex line">
+      <h2 class="title">Publishing</h2>
+
+      <ul class="publishing_txt" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1500">
+        <li>flex와 position을 이용한 다양한 레이아웃 구현</li>
+        <li>JavaScript와 css animation을 이용하여 이미지 움직임 적용</li>
+        <li>스크롤 위치에 따른 nav 바 생성 변화 이벤트</li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- Problems & Solution -->
+  <section class="problem">
+    <div class="layout flex">
+      <h2 class="title">Problems<br>&nbsp&nbsp& Solution</h2>
+
+      <ul class="problem_txt" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1500">
+        <li>1. 양쪽 영역 hover 시 이미지가 같이 움직이는 문제 발생
+          <p>각 영역 hover 시 영역의 width 값만 변경되는데 해당 영역에 위치한 이미지가 같이 움직임</p>
+          <p>width:auto 와 transform: translate() 값으로 위치 조절 후 해결함
+          </p>
+        </li>
+        <li>2. 메인의 텍스트 AOS가 실행될 때 백그라운드 gif가 어둡게 실행되지 않는 문제 발생
+          <p>gif를 background: url()로 삽입한 후 linear-gradient(), background-blend-mode: multiply로
+            어두워지도록 하였으나 처음부터 어두운 상태인 문제 발생</p>
+          <p>객체의 'load' 이벤트를 기다리는 이벤트 리스너를 설정, 이벤트 리스너 함수 내부에서 setTimeout 함수를 사용, setTimeout 함수는 지정한 시간이 경과한 후 특정 함수를
+            실행할 수 있게 해주고 setTimeout의 두 번째 인자는 함수가 실행되기 전의 지연 시간을 밀리 초로 실행되도록 설정, 'brightness(0.5)'; 적용하여 요소의 밝기를 조절하여
+            문제를 해결함
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- 사이트 보러가기 -->
+  <p class="site_btn">
+    <a href="../phomein.html" target="_blank">포메인 보러가기</a>
+  </p>
+
+
+  <!-- top 버튼 -->
+  <p class="top">
+    <a href="#top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24">
+        <path
+          d="M10.707 5.293a.997.997 0 0 0-1.414 0L5.05 9.536a1 1 0 0 0 1.414 1.414L9 8.414V14a1 1 0 0 0 2 0V8.414l2.536 2.536a1 1 0 0 0 1.414-1.414l-4.243-4.243zM10 20C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10-4.477 10-10 10z">
+        </path>
+      </svg></a>
+  </p>
+</body>
+
+</html>
