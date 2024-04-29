@@ -1,0 +1,79 @@
+@charset " utf-8";
+
+html{
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #FFF;
+      
+  color: #333;
+  font-family: 'Pretendard Variable';
+}
+
+
+/*** 스크롤바 ***/
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: #efefef;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #427D9D;
+  border-radius: 7px;
+}
+
+
+/*** index / 서브페이지 공통 css ***/
+.flex {
+  display: flex;
+}
+
+
+/*** 서브페이지 공통 css ***/
+.layout{
+  width: 85%;
+  margin: 0 auto;
+  padding: 4vw 2.5vw;
+
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.title{
+  font-size: 2.5vw;
+  font-weight: 900;
+}
+.line{
+  border-bottom: 1px solid #474747;
+}
+.square {
+  position: relative;
+  font-weight: 500;
+}
+.square::before {
+  content: "";
+  display: inline-block;
+  background: #427D9D;
+  width: 0.55vw;
+  height: 0.55vw;
+ 
+  vertical-align: middle;
+  margin: -3px 8px 0 0;
+}
+.top{
+  width: 2.5vw;
+  position: fixed;
+  right: 1%;
+  bottom: 1%;
+}
+.top svg{
+  fill: #427D9D;
+}
+.top:hover{
+  transition: 0.3s;
+  transform: translateY(-5px);
+}
+
+
+
+
