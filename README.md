@@ -16,7 +16,7 @@
  ##  `Style`
  ****🔹 keyword****<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;깔끔함 / 정보 전달
 
- ****🔹 Color****<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![index_color](./images/index_color.png)
+ ****🔹 Color****<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![index_color](index/images/index_color.png)
 
 ****🔹 Typography****<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pretendard Variable / TTWanjudaedunsancheB
 
