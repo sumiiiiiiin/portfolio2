@@ -20,5 +20,5 @@
 
 ****🔹 Typography****<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pretendard Variable / TTWanjudaedunsancheB
 
- ##  포트폴리오 구성도
+ ##  `포트폴리오 구성도`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![portfolio_diagram](./portfolio_diagram.png)
