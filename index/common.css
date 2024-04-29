@@ -1,0 +1,41 @@
+@charset " utf-8";
+
+@import url(../common/common.css);
+
+/*** 변수 설정 ***/
+:root {
+  --main-font: 'Pretendard Variable';
+  --title-font: 'TTWanjudaedunsancheB';
+
+  --color: #427D9D;
+
+/*** font-size ***/
+  --font-size-18: 0.89999vw;
+  --font-size-20: 1vw;
+  --font-size-25: 1.25vw;
+  --font-size-30: 1.5vw;
+  --font-size-40: 2vw;
+  --font-size-45: 2.25vw;
+  --font-size-50: 2.5vw;
+  --font-size-60: 3vw;
+  --font-size-80: 4vw;
+  --font-size-118: 5.8999vw;
+}
+
+/*** top btn ***/
+.top_btn{
+  width: 2.7vw;
+  position: fixed;
+  right: 1%;
+  bottom: 1%;
+}
+.top_btn svg{
+  fill: #427D9D;
+}
+.top_btn:hover{
+  transition: 0.3s;
+  transform: translateY(-5px);
+}
+.top_btn:hover svg{
+  fill: #fff;
+}

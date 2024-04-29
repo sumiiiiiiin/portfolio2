@@ -1,0 +1,289 @@
+@charset " utf-8";
+
+@import url(./common.css);
+
+/*** index common ***/
+body {
+  background: url(./images/main-bg.jpg) no-repeat 50% / cover ;
+  background-attachment: fixed;
+  font-family: var(--main-font);
+}
+.title{
+  font-family: var(--title-font);
+  font-size: var(--font-size-60);
+  text-transform: uppercase;
+  width: 90%;
+  padding: 4vw 0 1vw 0 ;
+
+  margin: 0 auto;
+}
+
+
+
+/***** header *****/
+header {
+  color: #222;
+  width: 100%;
+  height: 7vh;
+  line-height: 7vh;
+  
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+header nav{
+  width: 95%;
+  margin: 0 auto;
+  
+  text-transform: uppercase;
+  font-size: var(--font-size-25);
+  font-weight: 700;
+
+  justify-content: space-between;
+  align-items: center;
+}
+header nav h1{
+  font-weight: 700;
+}
+header nav menu li{
+  margin: 0 3vw;
+}
+header nav menu li:hover a{
+  color: var(--color);
+} 
+/* header menu hover 이벤트 */
+header nav menu li:hover{
+  transform: scale(1.08);
+  transition: 0.5s;
+}
+/* 스크롤시 header 변화 */
+header.scrolled {
+  background-color: #fff;
+  border-bottom: 3px solid var(--color);
+}
+
+
+/***** main *****/
+main{
+  width: 100%;
+  height: calc(100vh - 7vh);
+
+  position: relative;
+  margin-bottom: 3vw;
+}
+main .title_svg{
+  margin: 0 auto;
+  width: 90%;
+
+  padding-top: 10px;
+}
+main h3{
+  color: var(--color);
+  font-size: var(--font-size-30);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+
+  margin-top: 6vw;
+}
+main .explore_svg {
+  position: absolute;
+  left: 45%;
+  bottom: 3.8%;
+} 
+/* main explore_svg 효과 */
+.explore_svg:hover {
+  cursor: pointer;
+}
+.explore_svg:hover svg .svg-elem-1 {
+  stroke-dashoffset: 291.8130187988281px;
+  stroke-dasharray: 291.8130187988281px;
+  -webkit-transition: stroke-dashoffset 0.7s cubic-bezier(0.47, 0, 0.745, 0.715)
+      0s,
+    fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+  transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,
+    fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+}
+.explore_svg:hover svg.active .svg-elem-1 {
+  stroke-dashoffset: 583.6260375976562px;
+}
+.explore_svg:hover svg .svg-elem-2 {
+  transition: 0.4s;
+  transform: translateY(20px);
+}
+.explore_svg:hover svg .svg-elem-3 {
+  opacity: 0;
+  visibility: none;
+  transition: all 0.7s ease-in-out;
+}
+
+
+/***** project *****/
+.project{
+  /* background-color: orange; */
+  padding-bottom: 5vw;
+  margin-bottom: 5vw;
+  width: 100%;
+
+  position: relative;
+}
+.project .slide{
+  /* background-color: yellow; */
+  width: 90%;
+  height: 30vw;
+}
+.slideitem {
+  justify-content: space-evenly;
+  align-items: center;
+}
+.project .slideitem img{
+  border: 0.25vw solid #333;
+  width: 44%;
+  height: auto;
+  border-radius: 1vw;
+}
+.project .slide .item_txt{
+  width: 35%;
+  margin-left: 3vw;
+}
+.slideitem .item_txt h2{
+  text-transform: uppercase;
+  font-size: var(--font-size-40);
+  font-weight: 700;
+}
+.slideitem .item_txt h3{
+  font-size: var(--font-size-30);
+  font-weight: 600;
+  margin: 2vw 0;
+}
+.slideitem .item_txt p{
+  font-size: var(--font-size-20);
+  font-weight: 500;
+  margin-bottom: 2vw;
+  line-height: 1.2vw;
+}
+.slideitem .item_txt .more{
+  text-transform: uppercase;
+  font-size: var(--font-size-18);
+}
+.slideitem .item_txt .more:hover{
+  color: var(--color);
+  font-weight: 800;
+  transition: 0.5s;
+  transform: translateX(10px);
+}
+.slide .swiper-button-prev{
+  color: var(--color);
+  font-weight: 600;
+}
+.slide .swiper-button-next{
+  color: var(--color);
+  font-weight: 600;
+}
+.slide .swiper-button-prev::after{
+  font-size: 1.5vw;
+}
+.slide .swiper-button-next::after{
+  font-size: 1.5vw;
+}
+.swiper .swiper-pagination-bullet {
+  width: 0.5vw;
+  height: 0.5vw;
+  text-indent: -9999px;
+  font-size: 0.6vw;
+  opacity: 1;
+  background: #5297b265;
+  /* transform: translateY(-1.25vw); */
+}
+.swiper .swiper-pagination-bullet-active {
+  background: var(--color);
+}
+
+
+/***** skiils *****/
+.skill{
+  width: 100%;
+  margin-bottom: 3vw;
+}
+.skill .list_wrapper{
+  width: 90%;
+  margin: 0 auto;
+}
+.skill .list_wrapper .list li {
+  border-bottom: 2px solid var(--color);
+  height: 11vw;
+
+  align-items: center;
+
+  padding: 0 2vw;
+  transition: 0.3s;
+}
+.skill .list_wrapper .list li:hover {
+  background-color: #fff;
+}
+.skill .list_wrapper .list:hover li:not(:hover) {
+   opacity: 0.35; /* hover 영역을 제외한 다른 박스 어두워짐  */
+}
+.skill .list_wrapper .list h2 {
+  font-size: var(--font-size-30);
+  font-weight: 800;
+
+  padding-left: 8vw;
+  width: 60%;
+}
+.skill .list_wrapper .list p {
+  line-height: 1.7vw;
+  font-size: var(--font-size-20);
+  font-weight: 500;
+}
+
+
+/***** about me *****/
+.about{
+  width: 100%;
+  height: calc(100vh - 6vh);
+}
+.about .about_wrapper{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 8.2vw;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.about .about_wrapper h2{
+  font-family: var(--title-font);
+  font-size: var(--font-size-30);
+
+  text-transform: uppercase;
+  padding-bottom: 4vw;
+
+  margin: 0 auto;
+}
+.about .contact{
+  width: 45%;
+  margin-left: 3.2vw;
+}
+.about .contact_list li{
+  margin-bottom: 3vw;
+}
+.about .contact_list img{
+  width: 2.35vw;
+  height: 1.85vw;
+  margin-left: 4px;
+}
+.about .contact_list li p{
+  margin-left: 1.1vw;
+}
+.about .contact_list li p:hover{
+  transition: 0.3s;
+  transform: translateX(8px);
+}
+.about .me{
+  font-size: 1.09vw;
+  width: 50%;
+}
+.about .me p{
+  font-weight: 500;
+  line-height: 2.45vw;
+}
